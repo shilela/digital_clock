@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.703 ns
+From           : alarm_set
+To             : min_low[3]~reg0
+From Clock     : --
+To Clock       : alarm_clk
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 12.881 ns
+From           : sec_high[3]~reg0
+To             : sec_high[3]
+From Clock     : alarm_clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -0.058 ns
+From           : hr_high_alarm[1]
+To             : hr_high[1]~reg0
+From Clock     : --
+To Clock       : alarm_clk
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

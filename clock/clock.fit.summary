@@ -1,0 +1,12 @@
+Fitter Status : Successful - Wed Mar 13 06:14:14 2019
+Quartus II 64-Bit Version : 9.0 Build 132 02/25/2009 SJ Full Version
+Revision Name : clock
+Top-level Entity Name : clock
+Family : Cyclone
+Device : EP1C12Q240C8
+Timing Models : Final
+Total logic elements : 177 / 12,060 ( 1 % )
+Total pins : 35 / 173 ( 20 % )
+Total virtual pins : 0
+Total memory bits : 0 / 239,616 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

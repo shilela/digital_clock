@@ -1,0 +1,388 @@
+Classic Timing Analyzer report for display
+Sun Mar 10 20:46:37 2019
+Quartus II 64-Bit Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. tsu
+  7. tco
+  8. th
+  9. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                         ;
++------------------------------+-------+---------------+-------------+------------------+-----------------+------------+-----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From             ; To              ; From Clock ; To Clock  ; Failed Paths ;
++------------------------------+-------+---------------+-------------+------------------+-----------------+------------+-----------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; 9.703 ns    ; alarm_set        ; min_low[3]~reg0 ; --         ; alarm_clk ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 12.881 ns   ; sec_high[3]~reg0 ; sec_high[3]     ; alarm_clk  ; --        ; 0            ;
+; Worst-case th                ; N/A   ; None          ; -0.058 ns   ; hr_high_alarm[1] ; hr_high[1]~reg0 ; --         ; alarm_clk ; 0            ;
+; Total number of failed paths ;       ;               ;             ;                  ;                 ;            ;           ; 0            ;
++------------------------------+-------+---------------+-------------+------------------+-----------------+------------+-----------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                           ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                              ; Setting            ; From ; To ; Entity Name ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                         ; EP1C12Q240C8       ;      ;    ;             ;
+; Timing Models                                                       ; Final              ;      ;    ;             ;
+; Default hold multicycle                                             ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                           ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                              ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                      ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                    ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                               ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                             ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                    ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                       ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                   ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                   ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node               ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                               ; 10                 ;      ;    ;             ;
+; Number of paths to report                                           ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                        ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                              ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                          ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                        ; Off                ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis      ; Off                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                          ; Near End           ;      ;    ;             ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; alarm_clk       ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2 processors           ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------+
+; tsu                                                                                    ;
++-------+--------------+------------+---------------------+------------------+-----------+
+; Slack ; Required tsu ; Actual tsu ; From                ; To               ; To Clock  ;
++-------+--------------+------------+---------------------+------------------+-----------+
+; N/A   ; None         ; 9.703 ns   ; alarm_set           ; min_high[0]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 9.703 ns   ; alarm_set           ; min_high[1]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 9.703 ns   ; alarm_set           ; min_high[2]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 9.703 ns   ; alarm_set           ; min_high[3]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 9.703 ns   ; alarm_set           ; min_low[0]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 9.703 ns   ; alarm_set           ; min_low[1]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 9.703 ns   ; alarm_set           ; min_low[2]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 9.703 ns   ; alarm_set           ; min_low[3]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 9.160 ns   ; mode                ; hr_low[2]~reg0   ; alarm_clk ;
+; N/A   ; None         ; 9.158 ns   ; mode                ; hr_low[3]~reg0   ; alarm_clk ;
+; N/A   ; None         ; 8.795 ns   ; alarm_set           ; hr_high[0]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 8.795 ns   ; alarm_set           ; hr_high[1]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 8.795 ns   ; alarm_set           ; hr_high[2]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 8.795 ns   ; alarm_set           ; hr_high[3]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 8.795 ns   ; alarm_set           ; hr_low[0]~reg0   ; alarm_clk ;
+; N/A   ; None         ; 8.795 ns   ; alarm_set           ; hr_low[1]~reg0   ; alarm_clk ;
+; N/A   ; None         ; 8.113 ns   ; hr_high_setting[3]  ; hr_high[3]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 8.013 ns   ; hr_low_timing[1]    ; hr_low[1]~reg0   ; alarm_clk ;
+; N/A   ; None         ; 7.945 ns   ; hr_low_timing[0]    ; hr_low[0]~reg0   ; alarm_clk ;
+; N/A   ; None         ; 7.841 ns   ; hr_high_timing[2]   ; hr_high[2]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 7.807 ns   ; hr_high_timing[0]   ; hr_high[0]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 7.787 ns   ; hr_high_setting[1]  ; hr_high[1]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 7.617 ns   ; min_high_setting[2] ; min_high[2]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 7.149 ns   ; min_low_setting[0]  ; min_low[0]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 6.718 ns   ; sec_low_timing[2]   ; sec_low[2]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 6.511 ns   ; min_high_timing[0]  ; min_high[0]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 6.391 ns   ; alarm_set           ; hr_low[2]~reg0   ; alarm_clk ;
+; N/A   ; None         ; 6.391 ns   ; alarm_set           ; hr_low[3]~reg0   ; alarm_clk ;
+; N/A   ; None         ; 6.360 ns   ; min_low_timing[2]   ; min_low[2]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 6.237 ns   ; hr_low_alarm[3]     ; hr_low[3]~reg0   ; alarm_clk ;
+; N/A   ; None         ; 6.193 ns   ; min_high_timing[2]  ; min_high[2]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 6.015 ns   ; hr_high_setting[0]  ; hr_high[0]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 6.012 ns   ; hr_low_setting[1]   ; hr_low[1]~reg0   ; alarm_clk ;
+; N/A   ; None         ; 5.849 ns   ; mode                ; hr_low[1]~reg0   ; alarm_clk ;
+; N/A   ; None         ; 5.848 ns   ; mode                ; hr_high[3]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 5.847 ns   ; mode                ; hr_high[0]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 5.843 ns   ; mode                ; hr_high[1]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 5.841 ns   ; mode                ; hr_high[2]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 5.827 ns   ; alarm_set           ; sec_high[1]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 5.408 ns   ; alarm_set           ; sec_low[2]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 5.407 ns   ; alarm_set           ; sec_low[1]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 5.406 ns   ; alarm_set           ; sec_high[2]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 5.406 ns   ; mode                ; hr_low[0]~reg0   ; alarm_clk ;
+; N/A   ; None         ; 5.404 ns   ; alarm_set           ; sec_high[3]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 5.402 ns   ; alarm_set           ; sec_high[0]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 5.398 ns   ; alarm_set           ; sec_low[3]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 5.391 ns   ; alarm_set           ; sec_low[0]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 5.386 ns   ; hr_high_timing[3]   ; hr_high[3]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 5.313 ns   ; min_low_setting[2]  ; min_low[2]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 5.221 ns   ; sec_high_timing[3]  ; sec_high[3]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 5.013 ns   ; hr_low_alarm[0]     ; hr_low[0]~reg0   ; alarm_clk ;
+; N/A   ; None         ; 4.972 ns   ; hr_low_setting[0]   ; hr_low[0]~reg0   ; alarm_clk ;
+; N/A   ; None         ; 4.919 ns   ; hr_high_timing[1]   ; hr_high[1]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 4.722 ns   ; min_high_timing[1]  ; min_high[1]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 4.675 ns   ; hr_low_alarm[1]     ; hr_low[1]~reg0   ; alarm_clk ;
+; N/A   ; None         ; 4.673 ns   ; hr_high_alarm[2]    ; hr_high[2]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 4.650 ns   ; hr_high_setting[2]  ; hr_high[2]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 4.434 ns   ; mode                ; min_high[2]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 4.434 ns   ; mode                ; min_low[2]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 4.433 ns   ; mode                ; min_high[1]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 4.431 ns   ; mode                ; min_high[0]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 4.431 ns   ; mode                ; min_low[1]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 4.429 ns   ; mode                ; min_high[3]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 4.426 ns   ; mode                ; min_low[3]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 4.423 ns   ; mode                ; min_low[0]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 4.412 ns   ; hr_high_alarm[0]    ; hr_high[0]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 4.354 ns   ; hr_low_timing[3]    ; hr_low[3]~reg0   ; alarm_clk ;
+; N/A   ; None         ; 4.343 ns   ; sec_high_timing[1]  ; sec_high[1]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 4.278 ns   ; hr_low_setting[3]   ; hr_low[3]~reg0   ; alarm_clk ;
+; N/A   ; None         ; 4.208 ns   ; sec_high_timing[0]  ; sec_high[0]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 4.205 ns   ; hr_high_alarm[3]    ; hr_high[3]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 4.160 ns   ; sec_low_timing[1]   ; sec_low[1]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 4.154 ns   ; min_low_setting[1]  ; min_low[1]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 4.152 ns   ; min_low_setting[3]  ; min_low[3]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 4.152 ns   ; min_high_setting[1] ; min_high[1]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 4.147 ns   ; min_low_timing[0]   ; min_low[0]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 4.086 ns   ; sec_low_timing[0]   ; sec_low[0]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 4.018 ns   ; min_high_timing[3]  ; min_high[3]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 3.986 ns   ; hr_low_timing[2]    ; hr_low[2]~reg0   ; alarm_clk ;
+; N/A   ; None         ; 3.975 ns   ; min_low_timing[1]   ; min_low[1]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 3.933 ns   ; sec_low_timing[3]   ; sec_low[3]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 3.884 ns   ; sec_high_timing[2]  ; sec_high[2]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 3.818 ns   ; hr_low_alarm[2]     ; hr_low[2]~reg0   ; alarm_clk ;
+; N/A   ; None         ; 3.777 ns   ; min_low_timing[3]   ; min_low[3]~reg0  ; alarm_clk ;
+; N/A   ; None         ; 3.776 ns   ; hr_low_setting[2]   ; hr_low[2]~reg0   ; alarm_clk ;
+; N/A   ; None         ; 3.722 ns   ; min_high_setting[0] ; min_high[0]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 3.592 ns   ; min_high_setting[3] ; min_high[3]~reg0 ; alarm_clk ;
+; N/A   ; None         ; 0.110 ns   ; hr_high_alarm[1]    ; hr_high[1]~reg0  ; alarm_clk ;
++-------+--------------+------------+---------------------+------------------+-----------+
+
+
++---------------------------------------------------------------------------------+
+; tco                                                                             ;
++-------+--------------+------------+------------------+-------------+------------+
+; Slack ; Required tco ; Actual tco ; From             ; To          ; From Clock ;
++-------+--------------+------------+------------------+-------------+------------+
+; N/A   ; None         ; 12.881 ns  ; sec_high[3]~reg0 ; sec_high[3] ; alarm_clk  ;
+; N/A   ; None         ; 11.185 ns  ; sec_low[2]~reg0  ; sec_low[2]  ; alarm_clk  ;
+; N/A   ; None         ; 10.492 ns  ; sec_low[3]~reg0  ; sec_low[3]  ; alarm_clk  ;
+; N/A   ; None         ; 9.125 ns   ; sec_high[2]~reg0 ; sec_high[2] ; alarm_clk  ;
+; N/A   ; None         ; 9.121 ns   ; sec_high[0]~reg0 ; sec_high[0] ; alarm_clk  ;
+; N/A   ; None         ; 8.943 ns   ; hr_high[2]~reg0  ; hr_high[2]  ; alarm_clk  ;
+; N/A   ; None         ; 8.845 ns   ; hr_high[1]~reg0  ; hr_high[1]  ; alarm_clk  ;
+; N/A   ; None         ; 8.524 ns   ; hr_low[1]~reg0   ; hr_low[1]   ; alarm_clk  ;
+; N/A   ; None         ; 8.432 ns   ; min_low[0]~reg0  ; min_low[0]  ; alarm_clk  ;
+; N/A   ; None         ; 8.146 ns   ; hr_high[3]~reg0  ; hr_high[3]  ; alarm_clk  ;
+; N/A   ; None         ; 7.886 ns   ; min_high[0]~reg0 ; min_high[0] ; alarm_clk  ;
+; N/A   ; None         ; 7.753 ns   ; hr_low[0]~reg0   ; hr_low[0]   ; alarm_clk  ;
+; N/A   ; None         ; 7.753 ns   ; hr_high[0]~reg0  ; hr_high[0]  ; alarm_clk  ;
+; N/A   ; None         ; 7.741 ns   ; sec_high[1]~reg0 ; sec_high[1] ; alarm_clk  ;
+; N/A   ; None         ; 7.732 ns   ; sec_low[1]~reg0  ; sec_low[1]  ; alarm_clk  ;
+; N/A   ; None         ; 7.731 ns   ; hr_low[2]~reg0   ; hr_low[2]   ; alarm_clk  ;
+; N/A   ; None         ; 7.626 ns   ; min_low[3]~reg0  ; min_low[3]  ; alarm_clk  ;
+; N/A   ; None         ; 7.456 ns   ; min_high[1]~reg0 ; min_high[1] ; alarm_clk  ;
+; N/A   ; None         ; 7.453 ns   ; min_low[2]~reg0  ; min_low[2]  ; alarm_clk  ;
+; N/A   ; None         ; 7.440 ns   ; min_low[1]~reg0  ; min_low[1]  ; alarm_clk  ;
+; N/A   ; None         ; 7.327 ns   ; hr_low[3]~reg0   ; hr_low[3]   ; alarm_clk  ;
+; N/A   ; None         ; 7.293 ns   ; sec_low[0]~reg0  ; sec_low[0]  ; alarm_clk  ;
+; N/A   ; None         ; 6.996 ns   ; min_high[2]~reg0 ; min_high[2] ; alarm_clk  ;
+; N/A   ; None         ; 6.982 ns   ; min_high[3]~reg0 ; min_high[3] ; alarm_clk  ;
++-------+--------------+------------+------------------+-------------+------------+
+
+
++----------------------------------------------------------------------------------------------+
+; th                                                                                           ;
++---------------+-------------+-----------+---------------------+------------------+-----------+
+; Minimum Slack ; Required th ; Actual th ; From                ; To               ; To Clock  ;
++---------------+-------------+-----------+---------------------+------------------+-----------+
+; N/A           ; None        ; -0.058 ns ; hr_high_alarm[1]    ; hr_high[1]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -3.540 ns ; min_high_setting[3] ; min_high[3]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -3.670 ns ; min_high_setting[0] ; min_high[0]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -3.724 ns ; hr_low_setting[2]   ; hr_low[2]~reg0   ; alarm_clk ;
+; N/A           ; None        ; -3.725 ns ; min_low_timing[3]   ; min_low[3]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -3.766 ns ; hr_low_alarm[2]     ; hr_low[2]~reg0   ; alarm_clk ;
+; N/A           ; None        ; -3.832 ns ; sec_high_timing[2]  ; sec_high[2]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -3.881 ns ; sec_low_timing[3]   ; sec_low[3]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -3.923 ns ; min_low_timing[1]   ; min_low[1]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -3.934 ns ; hr_low_timing[2]    ; hr_low[2]~reg0   ; alarm_clk ;
+; N/A           ; None        ; -3.966 ns ; min_high_timing[3]  ; min_high[3]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -4.034 ns ; sec_low_timing[0]   ; sec_low[0]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -4.095 ns ; min_low_timing[0]   ; min_low[0]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -4.100 ns ; min_low_setting[3]  ; min_low[3]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -4.100 ns ; min_high_setting[1] ; min_high[1]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -4.102 ns ; min_low_setting[1]  ; min_low[1]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -4.108 ns ; sec_low_timing[1]   ; sec_low[1]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -4.153 ns ; hr_high_alarm[3]    ; hr_high[3]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -4.156 ns ; sec_high_timing[0]  ; sec_high[0]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -4.226 ns ; hr_low_setting[3]   ; hr_low[3]~reg0   ; alarm_clk ;
+; N/A           ; None        ; -4.291 ns ; sec_high_timing[1]  ; sec_high[1]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -4.302 ns ; hr_low_timing[3]    ; hr_low[3]~reg0   ; alarm_clk ;
+; N/A           ; None        ; -4.360 ns ; hr_high_alarm[0]    ; hr_high[0]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -4.371 ns ; mode                ; min_low[0]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -4.374 ns ; mode                ; min_low[3]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -4.377 ns ; mode                ; min_high[3]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -4.379 ns ; mode                ; min_high[0]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -4.379 ns ; mode                ; min_low[1]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -4.381 ns ; mode                ; min_high[1]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -4.382 ns ; mode                ; min_high[2]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -4.382 ns ; mode                ; min_low[2]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -4.598 ns ; hr_high_setting[2]  ; hr_high[2]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -4.621 ns ; hr_high_alarm[2]    ; hr_high[2]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -4.623 ns ; hr_low_alarm[1]     ; hr_low[1]~reg0   ; alarm_clk ;
+; N/A           ; None        ; -4.670 ns ; min_high_timing[1]  ; min_high[1]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -4.867 ns ; hr_high_timing[1]   ; hr_high[1]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -4.920 ns ; hr_low_setting[0]   ; hr_low[0]~reg0   ; alarm_clk ;
+; N/A           ; None        ; -4.961 ns ; hr_low_alarm[0]     ; hr_low[0]~reg0   ; alarm_clk ;
+; N/A           ; None        ; -5.169 ns ; sec_high_timing[3]  ; sec_high[3]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -5.261 ns ; min_low_setting[2]  ; min_low[2]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -5.334 ns ; hr_high_timing[3]   ; hr_high[3]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -5.339 ns ; alarm_set           ; sec_low[0]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -5.346 ns ; alarm_set           ; sec_low[3]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -5.350 ns ; alarm_set           ; sec_high[0]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -5.352 ns ; alarm_set           ; sec_high[3]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -5.354 ns ; alarm_set           ; sec_high[2]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -5.354 ns ; mode                ; hr_low[0]~reg0   ; alarm_clk ;
+; N/A           ; None        ; -5.355 ns ; alarm_set           ; sec_low[1]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -5.356 ns ; alarm_set           ; sec_low[2]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -5.775 ns ; alarm_set           ; sec_high[1]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -5.789 ns ; mode                ; hr_high[2]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -5.791 ns ; mode                ; hr_high[1]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -5.795 ns ; mode                ; hr_high[0]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -5.796 ns ; mode                ; hr_high[3]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -5.797 ns ; mode                ; hr_low[1]~reg0   ; alarm_clk ;
+; N/A           ; None        ; -5.960 ns ; hr_low_setting[1]   ; hr_low[1]~reg0   ; alarm_clk ;
+; N/A           ; None        ; -5.963 ns ; hr_high_setting[0]  ; hr_high[0]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -6.141 ns ; min_high_timing[2]  ; min_high[2]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -6.185 ns ; hr_low_alarm[3]     ; hr_low[3]~reg0   ; alarm_clk ;
+; N/A           ; None        ; -6.308 ns ; min_low_timing[2]   ; min_low[2]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -6.339 ns ; alarm_set           ; hr_low[2]~reg0   ; alarm_clk ;
+; N/A           ; None        ; -6.339 ns ; alarm_set           ; hr_low[3]~reg0   ; alarm_clk ;
+; N/A           ; None        ; -6.459 ns ; min_high_timing[0]  ; min_high[0]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -6.666 ns ; sec_low_timing[2]   ; sec_low[2]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -7.097 ns ; min_low_setting[0]  ; min_low[0]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -7.565 ns ; min_high_setting[2] ; min_high[2]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -7.735 ns ; hr_high_setting[1]  ; hr_high[1]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -7.755 ns ; hr_high_timing[0]   ; hr_high[0]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -7.789 ns ; hr_high_timing[2]   ; hr_high[2]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -7.893 ns ; hr_low_timing[0]    ; hr_low[0]~reg0   ; alarm_clk ;
+; N/A           ; None        ; -7.961 ns ; hr_low_timing[1]    ; hr_low[1]~reg0   ; alarm_clk ;
+; N/A           ; None        ; -8.061 ns ; hr_high_setting[3]  ; hr_high[3]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -8.743 ns ; alarm_set           ; hr_high[0]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -8.743 ns ; alarm_set           ; hr_high[1]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -8.743 ns ; alarm_set           ; hr_high[2]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -8.743 ns ; alarm_set           ; hr_high[3]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -8.743 ns ; alarm_set           ; hr_low[0]~reg0   ; alarm_clk ;
+; N/A           ; None        ; -8.743 ns ; alarm_set           ; hr_low[1]~reg0   ; alarm_clk ;
+; N/A           ; None        ; -9.106 ns ; mode                ; hr_low[3]~reg0   ; alarm_clk ;
+; N/A           ; None        ; -9.108 ns ; mode                ; hr_low[2]~reg0   ; alarm_clk ;
+; N/A           ; None        ; -9.651 ns ; alarm_set           ; min_high[0]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -9.651 ns ; alarm_set           ; min_high[1]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -9.651 ns ; alarm_set           ; min_high[2]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -9.651 ns ; alarm_set           ; min_high[3]~reg0 ; alarm_clk ;
+; N/A           ; None        ; -9.651 ns ; alarm_set           ; min_low[0]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -9.651 ns ; alarm_set           ; min_low[1]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -9.651 ns ; alarm_set           ; min_low[2]~reg0  ; alarm_clk ;
+; N/A           ; None        ; -9.651 ns ; alarm_set           ; min_low[3]~reg0  ; alarm_clk ;
++---------------+-------------+-----------+---------------------+------------------+-----------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Classic Timing Analyzer
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Sun Mar 10 20:46:37 2019
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off display -c display --timing_analysis_only
+Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "alarm_clk" is an undefined clock
+Info: No valid register-to-register data paths exist for clock "alarm_clk"
+Info: tsu for register "min_high[0]~reg0" (data pin = "alarm_set", clock pin = "alarm_clk") is 9.703 ns
+    Info: + Longest pin to register delay is 12.912 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.469 ns) = 1.469 ns; Loc. = PIN_144; Fanout = 24; PIN Node = 'alarm_set'
+        Info: 2: + IC(10.331 ns) + CELL(1.112 ns) = 12.912 ns; Loc. = LC_X2_Y24_N9; Fanout = 1; REG Node = 'min_high[0]~reg0'
+        Info: Total cell delay = 2.581 ns ( 19.99 % )
+        Info: Total interconnect delay = 10.331 ns ( 80.01 % )
+    Info: + Micro setup delay of destination is 0.037 ns
+    Info: - Shortest clock path from clock "alarm_clk" to destination register is 3.246 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.469 ns) = 1.469 ns; Loc. = PIN_29; Fanout = 24; CLK Node = 'alarm_clk'
+        Info: 2: + IC(1.066 ns) + CELL(0.711 ns) = 3.246 ns; Loc. = LC_X2_Y24_N9; Fanout = 1; REG Node = 'min_high[0]~reg0'
+        Info: Total cell delay = 2.180 ns ( 67.16 % )
+        Info: Total interconnect delay = 1.066 ns ( 32.84 % )
+Info: tco from clock "alarm_clk" to destination pin "sec_high[3]" through register "sec_high[3]~reg0" is 12.881 ns
+    Info: + Longest clock path from clock "alarm_clk" to source register is 3.187 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.469 ns) = 1.469 ns; Loc. = PIN_29; Fanout = 24; CLK Node = 'alarm_clk'
+        Info: 2: + IC(1.007 ns) + CELL(0.711 ns) = 3.187 ns; Loc. = LC_X46_Y24_N4; Fanout = 1; REG Node = 'sec_high[3]~reg0'
+        Info: Total cell delay = 2.180 ns ( 68.40 % )
+        Info: Total interconnect delay = 1.007 ns ( 31.60 % )
+    Info: + Micro clock to output delay of source is 0.224 ns
+    Info: + Longest register to pin delay is 9.470 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X46_Y24_N4; Fanout = 1; REG Node = 'sec_high[3]~reg0'
+        Info: 2: + IC(7.346 ns) + CELL(2.124 ns) = 9.470 ns; Loc. = PIN_43; Fanout = 0; PIN Node = 'sec_high[3]'
+        Info: Total cell delay = 2.124 ns ( 22.43 % )
+        Info: Total interconnect delay = 7.346 ns ( 77.57 % )
+Info: th for register "hr_high[1]~reg0" (data pin = "hr_high_alarm[1]", clock pin = "alarm_clk") is -0.058 ns
+    Info: + Longest clock path from clock "alarm_clk" to destination register is 3.170 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.469 ns) = 1.469 ns; Loc. = PIN_29; Fanout = 24; CLK Node = 'alarm_clk'
+        Info: 2: + IC(0.990 ns) + CELL(0.711 ns) = 3.170 ns; Loc. = LC_X8_Y10_N5; Fanout = 1; REG Node = 'hr_high[1]~reg0'
+        Info: Total cell delay = 2.180 ns ( 68.77 % )
+        Info: Total interconnect delay = 0.990 ns ( 31.23 % )
+    Info: + Micro hold delay of destination is 0.015 ns
+    Info: - Shortest pin to register delay is 3.243 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.469 ns) = 1.469 ns; Loc. = PIN_28; Fanout = 1; PIN Node = 'hr_high_alarm[1]'
+        Info: 2: + IC(1.659 ns) + CELL(0.115 ns) = 3.243 ns; Loc. = LC_X8_Y10_N5; Fanout = 1; REG Node = 'hr_high[1]~reg0'
+        Info: Total cell delay = 1.584 ns ( 48.84 % )
+        Info: Total interconnect delay = 1.659 ns ( 51.16 % )
+Info: Quartus II 64-Bit Classic Timing Analyzer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 200 megabytes
+    Info: Processing ended: Sun Mar 10 20:46:37 2019
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

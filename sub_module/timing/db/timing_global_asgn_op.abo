@@ -1,0 +1,4825 @@
+Version:
+	9.0 Build 132 02/25/2009 SJ Full Version
+
+Chip Device Options:
+	Device Name:	EP1C12Q240C8
+	Device JTAG code:	ffffffff
+	Programming_mode:	Active Serial Configuration
+	NWS_NRS_NCS:	UNRESERVED
+	RDYNBUSY:	UNRESERVED
+	DATA 7 to 1:	UNRESERVED
+	nCEO:	UNRESERVED
+	UNUSED PINS:	RESERVED_GND
+	Default IO Standard::	3.3-V LVTTL
+	User Start-up Clock:	0
+	Auto Restart on Error:	1
+	Release Clears Before Tristates:	0
+	Device Clear:	0
+	Test And Scan:	0
+	Device OE:	0
+	Enable Lock Output:	0
+	Enable Init Done:	0
+	Enable JTAG BST:	0
+	Enable Vref A:	0
+	Enable Vref B:	0
+
+
+
+****************************
+******Individual Atoms******
+****************************
+
+- ATOM ------------------------
+	ATOM_NAME: hr_high_timing_o[0]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 0
+	Atom Type: stratix_lcell (WYSIWYG)
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  Equal6~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  hr_high_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [SYNCH_DATA]	  hr_high_timing_i[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: [SCLR]	  hr_high_timing_o[0]~24	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: [SLOAD]	  always5~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		9: [ENA]	  hr_high_timing_o[0]~25	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	hr_high_timing_o[0]~reg0	LIT INDEX 0 FANOUTS 3 REGED POS
+		2: [COUT]	hr_high_timing_o[0]~17	LIT INDEX 0 FANOUTS 1
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = arithmetic
+		synch_mode                     = on
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 6688
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: hr_high_timing_o[1]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 1
+	Atom Type: stratix_lcell (WYSIWYG)
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  hr_high_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: [SYNCH_DATA]	  hr_high_timing_i[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: [SCLR]	  hr_high_timing_o[0]~24	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: [SLOAD]	  always5~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		9: [ENA]	  hr_high_timing_o[0]~25	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		10: [CIN]	  hr_high_timing_o[0]~17	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	hr_high_timing_o[1]~reg0	LIT INDEX 0 FANOUTS 4 REGED POS
+		2: [COUT]	hr_high_timing_o[1]~19	LIT INDEX 0 FANOUTS 1
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = arithmetic
+		synch_mode                     = on
+		register_cascade_mode          = off
+		sum_lutc_input                 = cin
+		lut_mask                       = 5a5f
+		cin_used                       = true
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: hr_high_timing_o[2]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 2
+	Atom Type: stratix_lcell (WYSIWYG)
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  hr_high_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: [SYNCH_DATA]	  hr_high_timing_i[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: [SCLR]	  hr_high_timing_o[0]~24	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: [SLOAD]	  always5~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		9: [ENA]	  hr_high_timing_o[0]~25	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		10: [CIN]	  hr_high_timing_o[1]~19	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	hr_high_timing_o[2]~reg0	LIT INDEX 0 FANOUTS 3 REGED POS
+		2: [COUT]	hr_high_timing_o[2]~21	LIT INDEX 0 FANOUTS 1
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = arithmetic
+		synch_mode                     = on
+		register_cascade_mode          = off
+		sum_lutc_input                 = cin
+		lut_mask                       = a50a
+		cin_used                       = true
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: hr_high_timing_o[3]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 3
+	Atom Type: stratix_lcell (WYSIWYG)
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  hr_high_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: [SYNCH_DATA]	  hr_high_timing_i[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: [SCLR]	  hr_high_timing_o[0]~24	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: [SLOAD]	  always5~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		9: [ENA]	  hr_high_timing_o[0]~25	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		10: [CIN]	  hr_high_timing_o[2]~21	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	hr_high_timing_o[3]~reg0	LIT INDEX 0 FANOUTS 3 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = on
+		register_cascade_mode          = off
+		sum_lutc_input                 = cin
+		lut_mask                       = 5a5a
+		cin_used                       = true
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: hr_low_timing_o[0]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 29
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  hr_low_timing_i[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  hr_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  hr_low_timing_o[0]~16	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  always5~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: [ENA]	  hr_high_timing_o[0]~25	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	hr_low_timing_o[0]~reg0	LIT INDEX 0 FANOUTS 8 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = aa03
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: hr_low_timing_o[1]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 30
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  hr_low_timing_i[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  Add4~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  always5~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  hr_low_timing_o[0]~16	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: [ENA]	  hr_high_timing_o[0]~25	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	hr_low_timing_o[1]~reg0	LIT INDEX 0 FANOUTS 7 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = a0ac
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: hr_low_timing_o[2]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 31
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  hr_low_timing_i[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  Add4~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  always5~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  hr_low_timing_o[0]~16	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: [ENA]	  hr_high_timing_o[0]~25	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	hr_low_timing_o[2]~reg0	LIT INDEX 0 FANOUTS 6 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = a0ac
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: hr_low_timing_o[3]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 32
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  hr_low_timing_i[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  Add4~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  always5~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  hr_low_timing_o[0]~16	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: [ENA]	  hr_high_timing_o[0]~25	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	hr_low_timing_o[3]~reg0	LIT INDEX 0 FANOUTS 4 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = a0ac
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: min_high_timing_o[0]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 33
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  min_high_timing_i[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  carry_sec~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: [DATAD]	  min_high_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: [ENA]	  min_high_timing_o[0]~17	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	min_high_timing_o[0]~reg0	LIT INDEX 0 FANOUTS 7 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 88bb
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: min_high_timing_o[1]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 34
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  min_high_timing_i[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  carry_sec~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  Add3~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  Equal2~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: [ENA]	  min_high_timing_o[0]~17	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	min_high_timing_o[1]~reg0	LIT INDEX 0 FANOUTS 6 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 88b8
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: min_high_timing_o[2]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 35
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  min_high_timing_i[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  carry_sec~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  Add3~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  Equal2~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: [ENA]	  min_high_timing_o[0]~17	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	min_high_timing_o[2]~reg0	LIT INDEX 0 FANOUTS 5 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 88b8
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: min_high_timing_o[3]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 36
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  min_high_timing_i[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  carry_sec~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  min_high_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  Add3~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: [ENA]	  min_high_timing_o[0]~17	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	min_high_timing_o[3]~reg0	LIT INDEX 0 FANOUTS 4 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 8bb8
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: min_low_timing_o[0]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 37
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  min_low_timing_i[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  carry_sec~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: [DATAD]	  min_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: [ENA]	  min_low_timing_o[0]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	min_low_timing_o[0]~reg0	LIT INDEX 0 FANOUTS 7 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 88bb
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: min_low_timing_o[1]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 38
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  min_low_timing_i[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  carry_sec~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  Add2~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  Equal3~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: [ENA]	  min_low_timing_o[0]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	min_low_timing_o[1]~reg0	LIT INDEX 0 FANOUTS 6 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 88b8
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: min_low_timing_o[2]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 39
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  min_low_timing_i[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  carry_sec~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  min_low_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  Add2~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: [ENA]	  min_low_timing_o[0]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	min_low_timing_o[2]~reg0	LIT INDEX 0 FANOUTS 5 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 8bb8
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: min_low_timing_o[3]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 40
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  min_low_timing_i[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  carry_sec~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  Add2~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  Equal3~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: [ENA]	  min_low_timing_o[0]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	min_low_timing_o[3]~reg0	LIT INDEX 0 FANOUTS 4 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 88b8
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: sec_high_timing_o[0]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 41
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  sec_high_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: [DATAD]	  reset_sec	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: [ENA]	  sec_high_timing_o[0]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	sec_high_timing_o[0]~reg0	LIT INDEX 0 FANOUTS 7 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 5500
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: sec_high_timing_o[1]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 42
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  Equal0~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  reset_sec	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  sec_high_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  sec_high_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: [ENA]	  sec_high_timing_o[0]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	sec_high_timing_o[1]~reg0	LIT INDEX 0 FANOUTS 6 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 0880
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: sec_high_timing_o[2]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 43
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  Equal0~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  reset_sec	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  sec_high_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  Add1~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: [ENA]	  sec_high_timing_o[0]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	sec_high_timing_o[2]~reg0	LIT INDEX 0 FANOUTS 5 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 0880
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: sec_high_timing_o[3]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 44
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  Equal0~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  reset_sec	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  sec_high_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  Add1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: [ENA]	  sec_high_timing_o[0]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	sec_high_timing_o[3]~reg0	LIT INDEX 0 FANOUTS 4 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 0880
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: sec_low_timing_o[0]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 45
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  alarm~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	sec_low_timing_o[0]~reg0	LIT INDEX 0 FANOUTS 7 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = aaaa
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: sec_low_timing_o[1]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 46
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  sec_high_timing_o[0]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: [DATAC]	  sec_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  sec_low_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	sec_low_timing_o[1]~reg0	LIT INDEX 0 FANOUTS 5 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 0550
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: sec_low_timing_o[2]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 47
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  sec_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  sec_low_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  sec_high_timing_o[0]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  sec_low_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	sec_low_timing_o[2]~reg0	LIT INDEX 0 FANOUTS 4 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 0708
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: sec_low_timing_o[3]~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 48
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  sec_high_timing_o[0]~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  sec_low_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  sec_low_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  Add0~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	sec_low_timing_o[3]~reg0	LIT INDEX 0 FANOUTS 6 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 1444
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: alarm~reg0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 49
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: [CLK]	  !(clk)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAA]	  mode	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  alarm~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  always6~24	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  alarm~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [ACLR]	~ VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: [REGOUT]	alarm~reg0	LIT INDEX 0 FANOUTS 1 REGED POS
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 8000
+		output_mode                    = reg_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: Equal6~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 51
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  hr_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  hr_low_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  hr_low_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  hr_low_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Equal6~0	LIT INDEX 0 FANOUTS 2
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 0008
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: Equal2~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 53
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  min_high_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  min_high_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  min_high_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  min_high_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Equal2~0	LIT INDEX 0 FANOUTS 5
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 0008
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: Equal3~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 54
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  min_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  min_low_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  min_low_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  min_low_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Equal3~0	LIT INDEX 0 FANOUTS 6
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 0008
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: Equal0~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 55
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  sec_high_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  sec_high_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  sec_high_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  sec_high_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Equal0~0	LIT INDEX 0 FANOUTS 5
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = efff
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: always6~18 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 56
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAC]	  sec_low_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  sec_low_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	always6~18	LIT INDEX 0 FANOUTS 3
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 000f
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: carry_sec~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 57
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  Equal0~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  sec_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  sec_low_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  always6~18	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	carry_sec~0	LIT INDEX 0 FANOUTS 12
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = bfff
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: always5~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 58
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  Equal2~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  Equal3~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: [DATAD]	  carry_sec~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	always5~0	LIT INDEX 0 FANOUTS 9
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = ff77
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: always5~2 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 59
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  hr_high_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  hr_high_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  hr_high_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  hr_low_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	always5~2	LIT INDEX 0 FANOUTS 3
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 0001
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: always5~3 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 60
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  hr_high_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  hr_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  hr_low_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  hr_low_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	always5~3	LIT INDEX 0 FANOUTS 2
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 0080
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: hr_high_timing_o[0]~24 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 61
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  always5~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  always5~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  always5~3	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	hr_high_timing_o[0]~24	LIT INDEX 0 FANOUTS 4
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 4040
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: hr_high_timing_o[0]~25 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 63
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  mode	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  carry_sec~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  Equal2~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  Equal3~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	hr_high_timing_o[0]~25	LIT INDEX 0 FANOUTS 8
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 7555
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: hr_low_timing_o[0]~16 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 68
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  Equal6~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  always5~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  always5~3	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	hr_low_timing_o[0]~16	LIT INDEX 0 FANOUTS 4
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = eaea
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add4~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 70
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAC]	  hr_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  hr_low_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add4~0	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 0ff0
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add4~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 72
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: [DATAB]	  hr_low_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  hr_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  hr_low_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add4~1	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 3ccc
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add4~2 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 74
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  hr_low_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  hr_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  hr_low_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  hr_low_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add4~2	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 6aaa
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: min_high_timing_o[0]~17 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 76
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  mode	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  carry_sec~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: [DATAD]	  Equal3~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	min_high_timing_o[0]~17	LIT INDEX 0 FANOUTS 4
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 7744
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add3~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 78
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAC]	  min_high_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  min_high_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add3~0	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 0ff0
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add3~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 80
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: [DATAB]	  min_high_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  min_high_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  min_high_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add3~1	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 3ccc
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add3~2 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 82
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  min_high_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  min_high_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  min_high_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add3~2	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 8080
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: min_low_timing_o[0]~13 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 84
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  carry_sec~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  mode	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	min_low_timing_o[0]~13	LIT INDEX 0 FANOUTS 4
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 7777
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add2~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 86
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAC]	  min_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  min_low_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add2~0	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 0ff0
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add2~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 88
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  min_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  min_low_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add2~1	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 8888
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add2~2 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 90
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  min_low_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  min_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  min_low_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  min_low_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add2~2	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 6aaa
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: sec_high_timing_o[0]~13 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 92
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  reset_sec	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  sec_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  sec_low_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  always6~18	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	sec_high_timing_o[0]~13	LIT INDEX 0 FANOUTS 7
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = d555
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add1~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 93
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  sec_high_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  sec_high_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add1~0	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 8888
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add1~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 94
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  sec_high_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  sec_high_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  sec_high_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add1~1	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 8080
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: alarm~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 95
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  reset_sec	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: [DATAD]	  sec_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	alarm~1	LIT INDEX 0 FANOUTS 2
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 00aa
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add0~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 96
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  sec_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  sec_low_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add0~0	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 8888
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: always6~19 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 97
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  min_high_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  min_high_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  sec_high_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  sec_high_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	always6~19	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 0001
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: always6~20 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 98
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  min_high_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  min_high_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  min_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  min_low_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	always6~20	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 0001
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: always6~21 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 99
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  always6~20	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  sec_high_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  sec_high_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  sec_low_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	always6~21	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 0002
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: always6~22 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 100
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  min_low_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  min_low_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  always6~19	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  always6~21	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	always6~22	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 1000
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: always6~23 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 101
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  Equal3~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  Equal2~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  Equal0~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	always6~23	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 0808
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: always6~24 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 102
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  always6~18	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  sec_low_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  always6~22	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  always6~23	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	always6~24	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = bba0
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: always6~25 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 103
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAC]	  hr_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  hr_low_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	always6~25	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = 000f
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: alarm~2 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 104
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: [DATAA]	  hr_high_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAB]	  hr_low_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAC]	  always6~25	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAD]	  always5~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	alarm~2	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		synch_mode                     = off
+		register_cascade_mode          = off
+		sum_lutc_input                 = datac
+		lut_mask                       = aeff
+		output_mode                    = comb_only
+
+
+- ATOM ------------------------
+	ATOM_NAME: hr_high_timing_o[0] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 107
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  hr_high_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	hr_high_timing_o[0]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: hr_high_timing_o[1] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 108
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  hr_high_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	hr_high_timing_o[1]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: hr_high_timing_o[2] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 109
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  hr_high_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	hr_high_timing_o[2]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: hr_high_timing_o[3] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 110
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  hr_high_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	hr_high_timing_o[3]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: hr_low_timing_o[0] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 111
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  hr_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	hr_low_timing_o[0]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: hr_low_timing_o[1] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 112
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  hr_low_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	hr_low_timing_o[1]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: hr_low_timing_o[2] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 113
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  hr_low_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	hr_low_timing_o[2]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: hr_low_timing_o[3] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 114
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  hr_low_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	hr_low_timing_o[3]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: min_high_timing_o[0] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 115
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  min_high_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	min_high_timing_o[0]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: min_high_timing_o[1] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 116
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  min_high_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	min_high_timing_o[1]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: min_high_timing_o[2] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 117
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  min_high_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	min_high_timing_o[2]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: min_high_timing_o[3] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 118
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  min_high_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	min_high_timing_o[3]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: min_low_timing_o[0] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 119
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  min_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	min_low_timing_o[0]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: min_low_timing_o[1] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 120
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  min_low_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	min_low_timing_o[1]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: min_low_timing_o[2] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 121
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  min_low_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	min_low_timing_o[2]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: min_low_timing_o[3] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 122
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  min_low_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	min_low_timing_o[3]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: sec_high_timing_o[0] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 123
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  sec_high_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	sec_high_timing_o[0]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: sec_high_timing_o[1] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 124
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  sec_high_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	sec_high_timing_o[1]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: sec_high_timing_o[2] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 125
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  sec_high_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	sec_high_timing_o[2]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: sec_high_timing_o[3] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 126
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  sec_high_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	sec_high_timing_o[3]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: sec_low_timing_o[0] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 127
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  sec_low_timing_o[0]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	sec_low_timing_o[0]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: sec_low_timing_o[1] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 128
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  sec_low_timing_o[1]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	sec_low_timing_o[1]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: sec_low_timing_o[2] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 129
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  sec_low_timing_o[2]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	sec_low_timing_o[2]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: sec_low_timing_o[3] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 130
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  sec_low_timing_o[3]~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	sec_low_timing_o[3]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: alarm -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 131
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  alarm~reg0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	alarm	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: clk -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 132
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	clk	LIT INDEX 0 FANOUTS 25
+		1: NONE
+		2: [PADIO]	clk	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: hr_high_timing_i[0] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 133
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	hr_high_timing_i[0]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: [PADIO]	hr_high_timing_i[0]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: mode -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 134
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	mode	LIT INDEX 0 FANOUTS 4
+		1: NONE
+		2: [PADIO]	mode	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: hr_high_timing_i[1] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 135
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	hr_high_timing_i[1]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: [PADIO]	hr_high_timing_i[1]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: hr_high_timing_i[2] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 136
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	hr_high_timing_i[2]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: [PADIO]	hr_high_timing_i[2]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: hr_high_timing_i[3] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 137
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	hr_high_timing_i[3]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: [PADIO]	hr_high_timing_i[3]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: hr_low_timing_i[0] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 138
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	hr_low_timing_i[0]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: [PADIO]	hr_low_timing_i[0]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: hr_low_timing_i[1] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 139
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	hr_low_timing_i[1]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: [PADIO]	hr_low_timing_i[1]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: hr_low_timing_i[2] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 140
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	hr_low_timing_i[2]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: [PADIO]	hr_low_timing_i[2]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: hr_low_timing_i[3] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 141
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	hr_low_timing_i[3]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: [PADIO]	hr_low_timing_i[3]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: min_high_timing_i[0] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 142
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	min_high_timing_i[0]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: [PADIO]	min_high_timing_i[0]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: min_high_timing_i[1] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 143
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	min_high_timing_i[1]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: [PADIO]	min_high_timing_i[1]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: min_high_timing_i[2] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 144
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	min_high_timing_i[2]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: [PADIO]	min_high_timing_i[2]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: min_high_timing_i[3] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 145
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	min_high_timing_i[3]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: [PADIO]	min_high_timing_i[3]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: min_low_timing_i[0] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 146
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	min_low_timing_i[0]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: [PADIO]	min_low_timing_i[0]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: min_low_timing_i[1] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 147
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	min_low_timing_i[1]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: [PADIO]	min_low_timing_i[1]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: min_low_timing_i[2] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 148
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	min_low_timing_i[2]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: [PADIO]	min_low_timing_i[2]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: min_low_timing_i[3] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 149
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	min_low_timing_i[3]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: [PADIO]	min_low_timing_i[3]	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: reset_sec -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 150
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	reset_sec	LIT INDEX 0 FANOUTS 6
+		1: NONE
+		2: [PADIO]	reset_sec	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: ~STRATIX_FITTER_CREATED_GND~I -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 151
+	Atom Type: stratix_lcell
+
+	Assembler Lutmask : I very much like HEX numbers. 
+	power up = low
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	~STRATIX_FITTER_CREATED_GND~I	LIT INDEX 0 FANOUTS 0
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		(Skipping parameters for lcell or lcell comb with no fanout)
+
+
+- ATOM ------------------------
+	ATOM_NAME: ~nCSO~ -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 152
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	~nCSO~	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: ~ASDO~ -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 153
+	Atom Type: tornado_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: [PADIO]	~ASDO~	LIT INDEX 0 FANOUTS 0
+		3: NONE
+		4: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	OFF
+		PAD TO CORE 1:	OFF
+		PAD TO INPUT REG:	OFF
+		TCO CHAIN:	OFF
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+

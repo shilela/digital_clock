@@ -1,0 +1,558 @@
+Simulator report for alarm
+Wed Mar 13 08:40:15 2019
+Quartus II 64-Bit Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 208 nodes    ;
+; Simulation Coverage         ;       7.66 % ;
+; Total Number of Transitions ; 4208         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone      ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       7.66 % ;
+; Total nodes checked                                 ; 208          ;
+; Total output ports checked                          ; 209          ;
+; Total output ports with complete 1/0-value coverage ; 16           ;
+; Total output ports with no 1/0-value coverage       ; 189          ;
+; Total output ports with no 1-value coverage         ; 193          ;
+; Total output ports with no 0-value coverage         ; 189          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                        ;
++------------------------+------------------------+------------------+
+; Node Name              ; Output Port Name       ; Output Port Type ;
++------------------------+------------------------+------------------+
+; |alarm|always1~1       ; |alarm|always1~1       ; out0             ;
+; |alarm|always1~2       ; |alarm|always1~2       ; out0             ;
+; |alarm|alarm_set_t     ; |alarm|alarm_set_t     ; regout           ;
+; |alarm|always2~1       ; |alarm|always2~1       ; out0             ;
+; |alarm|always2~2       ; |alarm|always2~2       ; out0             ;
+; |alarm|alarm~reg0      ; |alarm|alarm~reg0      ; regout           ;
+; |alarm|alarm~0         ; |alarm|alarm~0         ; out              ;
+; |alarm|alarm~1         ; |alarm|alarm~1         ; out              ;
+; |alarm|alarm~2         ; |alarm|alarm~2         ; out              ;
+; |alarm|change_t        ; |alarm|change_t        ; regout           ;
+; |alarm|alarm           ; |alarm|alarm           ; pin_out          ;
+; |alarm|sec_high_z_i[0] ; |alarm|sec_high_z_i[0] ; out              ;
+; |alarm|sec_high_z_i[2] ; |alarm|sec_high_z_i[2] ; out              ;
+; |alarm|alarm_clk       ; |alarm|alarm_clk       ; out              ;
+; |alarm|change          ; |alarm|change          ; out              ;
+; |alarm|Equal3~0        ; |alarm|Equal3~0        ; out0             ;
++------------------------+------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                        ;
++----------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+; Node Name                                                                  ; Output Port Name                                                                ; Output Port Type ;
++----------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+; |alarm|always1~0                                                           ; |alarm|always1~0                                                                ; out0             ;
+; |alarm|always1~3                                                           ; |alarm|always1~3                                                                ; out0             ;
+; |alarm|hr_low_alarm_o~0                                                    ; |alarm|hr_low_alarm_o~0                                                         ; out              ;
+; |alarm|hr_low_alarm_o~1                                                    ; |alarm|hr_low_alarm_o~1                                                         ; out              ;
+; |alarm|hr_low_alarm_o~2                                                    ; |alarm|hr_low_alarm_o~2                                                         ; out              ;
+; |alarm|hr_low_alarm_o~3                                                    ; |alarm|hr_low_alarm_o~3                                                         ; out              ;
+; |alarm|hr_high_alarm_o~0                                                   ; |alarm|hr_high_alarm_o~0                                                        ; out              ;
+; |alarm|hr_high_alarm_o~1                                                   ; |alarm|hr_high_alarm_o~1                                                        ; out              ;
+; |alarm|hr_high_alarm_o~2                                                   ; |alarm|hr_high_alarm_o~2                                                        ; out              ;
+; |alarm|hr_high_alarm_o~3                                                   ; |alarm|hr_high_alarm_o~3                                                        ; out              ;
+; |alarm|hr_high_alarm_o~4                                                   ; |alarm|hr_high_alarm_o~4                                                        ; out              ;
+; |alarm|hr_high_alarm_o~5                                                   ; |alarm|hr_high_alarm_o~5                                                        ; out              ;
+; |alarm|hr_high_alarm_o~6                                                   ; |alarm|hr_high_alarm_o~6                                                        ; out              ;
+; |alarm|hr_high_alarm_o~7                                                   ; |alarm|hr_high_alarm_o~7                                                        ; out              ;
+; |alarm|hr_low_alarm_o~4                                                    ; |alarm|hr_low_alarm_o~4                                                         ; out              ;
+; |alarm|hr_low_alarm_o~5                                                    ; |alarm|hr_low_alarm_o~5                                                         ; out              ;
+; |alarm|hr_low_alarm_o~6                                                    ; |alarm|hr_low_alarm_o~6                                                         ; out              ;
+; |alarm|hr_low_alarm_o~7                                                    ; |alarm|hr_low_alarm_o~7                                                         ; out              ;
+; |alarm|hr_high_alarm_o~8                                                   ; |alarm|hr_high_alarm_o~8                                                        ; out              ;
+; |alarm|hr_high_alarm_o~9                                                   ; |alarm|hr_high_alarm_o~9                                                        ; out              ;
+; |alarm|hr_high_alarm_o~10                                                  ; |alarm|hr_high_alarm_o~10                                                       ; out              ;
+; |alarm|hr_high_alarm_o~11                                                  ; |alarm|hr_high_alarm_o~11                                                       ; out              ;
+; |alarm|hr_low_alarm_o~8                                                    ; |alarm|hr_low_alarm_o~8                                                         ; out              ;
+; |alarm|hr_low_alarm_o~9                                                    ; |alarm|hr_low_alarm_o~9                                                         ; out              ;
+; |alarm|hr_low_alarm_o~10                                                   ; |alarm|hr_low_alarm_o~10                                                        ; out              ;
+; |alarm|hr_low_alarm_o~11                                                   ; |alarm|hr_low_alarm_o~11                                                        ; out              ;
+; |alarm|hr_high_alarm_o~12                                                  ; |alarm|hr_high_alarm_o~12                                                       ; out              ;
+; |alarm|hr_high_alarm_o~13                                                  ; |alarm|hr_high_alarm_o~13                                                       ; out              ;
+; |alarm|hr_high_alarm_o~14                                                  ; |alarm|hr_high_alarm_o~14                                                       ; out              ;
+; |alarm|hr_high_alarm_o~15                                                  ; |alarm|hr_high_alarm_o~15                                                       ; out              ;
+; |alarm|hr_low_alarm_o~12                                                   ; |alarm|hr_low_alarm_o~12                                                        ; out              ;
+; |alarm|hr_low_alarm_o~13                                                   ; |alarm|hr_low_alarm_o~13                                                        ; out              ;
+; |alarm|hr_low_alarm_o~14                                                   ; |alarm|hr_low_alarm_o~14                                                        ; out              ;
+; |alarm|hr_low_alarm_o~15                                                   ; |alarm|hr_low_alarm_o~15                                                        ; out              ;
+; |alarm|hr_high_alarm_o~16                                                  ; |alarm|hr_high_alarm_o~16                                                       ; out              ;
+; |alarm|hr_high_alarm_o~17                                                  ; |alarm|hr_high_alarm_o~17                                                       ; out              ;
+; |alarm|hr_high_alarm_o~18                                                  ; |alarm|hr_high_alarm_o~18                                                       ; out              ;
+; |alarm|hr_high_alarm_o~19                                                  ; |alarm|hr_high_alarm_o~19                                                       ; out              ;
+; |alarm|hr_low_alarm_o~16                                                   ; |alarm|hr_low_alarm_o~16                                                        ; out              ;
+; |alarm|hr_low_alarm_o~17                                                   ; |alarm|hr_low_alarm_o~17                                                        ; out              ;
+; |alarm|hr_low_alarm_o~18                                                   ; |alarm|hr_low_alarm_o~18                                                        ; out              ;
+; |alarm|hr_low_alarm_o~19                                                   ; |alarm|hr_low_alarm_o~19                                                        ; out              ;
+; |alarm|always2~0                                                           ; |alarm|always2~0                                                                ; out0             ;
+; |alarm|always2~3                                                           ; |alarm|always2~3                                                                ; out0             ;
+; |alarm|always2~4                                                           ; |alarm|always2~4                                                                ; out0             ;
+; |alarm|hr_low_alarm_o[0]~reg0                                              ; |alarm|hr_low_alarm_o[0]~reg0                                                   ; regout           ;
+; |alarm|LED_hr~0                                                            ; |alarm|LED_hr~0                                                                 ; out0             ;
+; |alarm|LED_min~0                                                           ; |alarm|LED_min~0                                                                ; out0             ;
+; |alarm|hr_low_alarm_o[1]~reg0                                              ; |alarm|hr_low_alarm_o[1]~reg0                                                   ; regout           ;
+; |alarm|hr_low_alarm_o[2]~reg0                                              ; |alarm|hr_low_alarm_o[2]~reg0                                                   ; regout           ;
+; |alarm|hr_low_alarm_o[3]~reg0                                              ; |alarm|hr_low_alarm_o[3]~reg0                                                   ; regout           ;
+; |alarm|hr_high_alarm_o[0]~reg0                                             ; |alarm|hr_high_alarm_o[0]~reg0                                                  ; regout           ;
+; |alarm|hr_high_alarm_o[1]~reg0                                             ; |alarm|hr_high_alarm_o[1]~reg0                                                  ; regout           ;
+; |alarm|hr_high_alarm_o[2]~reg0                                             ; |alarm|hr_high_alarm_o[2]~reg0                                                  ; regout           ;
+; |alarm|hr_high_alarm_o[3]~reg0                                             ; |alarm|hr_high_alarm_o[3]~reg0                                                  ; regout           ;
+; |alarm|alarm_set                                                           ; |alarm|alarm_set                                                                ; out              ;
+; |alarm|hr_high_alarm_i[0]                                                  ; |alarm|hr_high_alarm_i[0]                                                       ; out              ;
+; |alarm|hr_high_alarm_i[1]                                                  ; |alarm|hr_high_alarm_i[1]                                                       ; out              ;
+; |alarm|hr_high_alarm_i[2]                                                  ; |alarm|hr_high_alarm_i[2]                                                       ; out              ;
+; |alarm|hr_high_alarm_i[3]                                                  ; |alarm|hr_high_alarm_i[3]                                                       ; out              ;
+; |alarm|hr_low_alarm_i[0]                                                   ; |alarm|hr_low_alarm_i[0]                                                        ; out              ;
+; |alarm|hr_low_alarm_i[1]                                                   ; |alarm|hr_low_alarm_i[1]                                                        ; out              ;
+; |alarm|hr_low_alarm_i[2]                                                   ; |alarm|hr_low_alarm_i[2]                                                        ; out              ;
+; |alarm|hr_low_alarm_i[3]                                                   ; |alarm|hr_low_alarm_i[3]                                                        ; out              ;
+; |alarm|hr_high_alarm_o[0]                                                  ; |alarm|hr_high_alarm_o[0]                                                       ; pin_out          ;
+; |alarm|hr_high_alarm_o[1]                                                  ; |alarm|hr_high_alarm_o[1]                                                       ; pin_out          ;
+; |alarm|hr_high_alarm_o[2]                                                  ; |alarm|hr_high_alarm_o[2]                                                       ; pin_out          ;
+; |alarm|hr_high_alarm_o[3]                                                  ; |alarm|hr_high_alarm_o[3]                                                       ; pin_out          ;
+; |alarm|hr_low_alarm_o[0]                                                   ; |alarm|hr_low_alarm_o[0]                                                        ; pin_out          ;
+; |alarm|hr_low_alarm_o[1]                                                   ; |alarm|hr_low_alarm_o[1]                                                        ; pin_out          ;
+; |alarm|hr_low_alarm_o[2]                                                   ; |alarm|hr_low_alarm_o[2]                                                        ; pin_out          ;
+; |alarm|hr_low_alarm_o[3]                                                   ; |alarm|hr_low_alarm_o[3]                                                        ; pin_out          ;
+; |alarm|sec_high_z_i[1]                                                     ; |alarm|sec_high_z_i[1]                                                          ; out              ;
+; |alarm|sec_high_z_i[3]                                                     ; |alarm|sec_high_z_i[3]                                                          ; out              ;
+; |alarm|turn                                                                ; |alarm|turn                                                                     ; out              ;
+; |alarm|LED_hr                                                              ; |alarm|LED_hr                                                                   ; pin_out          ;
+; |alarm|LED_min                                                             ; |alarm|LED_min                                                                  ; pin_out          ;
+; |alarm|LessThan0~0                                                         ; |alarm|LessThan0~0                                                              ; out0             ;
+; |alarm|LessThan0~1                                                         ; |alarm|LessThan0~1                                                              ; out0             ;
+; |alarm|LessThan0~2                                                         ; |alarm|LessThan0~2                                                              ; out0             ;
+; |alarm|LessThan0~3                                                         ; |alarm|LessThan0~3                                                              ; out0             ;
+; |alarm|LessThan0~4                                                         ; |alarm|LessThan0~4                                                              ; out0             ;
+; |alarm|LessThan0~5                                                         ; |alarm|LessThan0~5                                                              ; out0             ;
+; |alarm|LessThan0~6                                                         ; |alarm|LessThan0~6                                                              ; out0             ;
+; |alarm|LessThan0~7                                                         ; |alarm|LessThan0~7                                                              ; out0             ;
+; |alarm|LessThan0~8                                                         ; |alarm|LessThan0~8                                                              ; out0             ;
+; |alarm|LessThan0~9                                                         ; |alarm|LessThan0~9                                                              ; out0             ;
+; |alarm|LessThan0~10                                                        ; |alarm|LessThan0~10                                                             ; out0             ;
+; |alarm|LessThan0~11                                                        ; |alarm|LessThan0~11                                                             ; out0             ;
+; |alarm|LessThan0~12                                                        ; |alarm|LessThan0~12                                                             ; out0             ;
+; |alarm|LessThan1~0                                                         ; |alarm|LessThan1~0                                                              ; out0             ;
+; |alarm|LessThan1~1                                                         ; |alarm|LessThan1~1                                                              ; out0             ;
+; |alarm|LessThan1~2                                                         ; |alarm|LessThan1~2                                                              ; out0             ;
+; |alarm|LessThan1~3                                                         ; |alarm|LessThan1~3                                                              ; out0             ;
+; |alarm|LessThan1~4                                                         ; |alarm|LessThan1~4                                                              ; out0             ;
+; |alarm|LessThan1~5                                                         ; |alarm|LessThan1~5                                                              ; out0             ;
+; |alarm|LessThan1~6                                                         ; |alarm|LessThan1~6                                                              ; out0             ;
+; |alarm|LessThan1~7                                                         ; |alarm|LessThan1~7                                                              ; out0             ;
+; |alarm|LessThan1~8                                                         ; |alarm|LessThan1~8                                                              ; out0             ;
+; |alarm|LessThan1~9                                                         ; |alarm|LessThan1~9                                                              ; out0             ;
+; |alarm|LessThan1~10                                                        ; |alarm|LessThan1~10                                                             ; out0             ;
+; |alarm|LessThan1~11                                                        ; |alarm|LessThan1~11                                                             ; out0             ;
+; |alarm|LessThan1~12                                                        ; |alarm|LessThan1~12                                                             ; out0             ;
+; |alarm|Equal0~0                                                            ; |alarm|Equal0~0                                                                 ; out0             ;
+; |alarm|Equal1~0                                                            ; |alarm|Equal1~0                                                                 ; out0             ;
+; |alarm|Equal2~0                                                            ; |alarm|Equal2~0                                                                 ; out0             ;
+; |alarm|Equal4~0                                                            ; |alarm|Equal4~0                                                                 ; out0             ;
+; |alarm|Equal4~1                                                            ; |alarm|Equal4~1                                                                 ; out0             ;
+; |alarm|Equal4~2                                                            ; |alarm|Equal4~2                                                                 ; out0             ;
+; |alarm|Equal4~3                                                            ; |alarm|Equal4~3                                                                 ; out0             ;
+; |alarm|Equal4~4                                                            ; |alarm|Equal4~4                                                                 ; out0             ;
+; |alarm|lpm_add_sub:Add1|result_node[0]                                     ; |alarm|lpm_add_sub:Add1|result_node[0]                                          ; out0             ;
+; |alarm|lpm_add_sub:Add1|result_node[1]                                     ; |alarm|lpm_add_sub:Add1|result_node[1]                                          ; out0             ;
+; |alarm|lpm_add_sub:Add1|result_node[2]                                     ; |alarm|lpm_add_sub:Add1|result_node[2]                                          ; out0             ;
+; |alarm|lpm_add_sub:Add1|result_node[3]                                     ; |alarm|lpm_add_sub:Add1|result_node[3]                                          ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[0]                             ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~0                                  ; |alarm|lpm_add_sub:Add1|addcore:adder|_~0                                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~1                                  ; |alarm|lpm_add_sub:Add1|addcore:adder|_~1                                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~2                                  ; |alarm|lpm_add_sub:Add1|addcore:adder|_~2                                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~3                                  ; |alarm|lpm_add_sub:Add1|addcore:adder|_~3                                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[3]~1                      ; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[3]~1                           ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[3]                             ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[2]                             ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[1]                             ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~1                  ; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~1                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~2                  ; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~2                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~3                  ; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~3                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                    ; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                    ; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                    ; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                         ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~4                                  ; |alarm|lpm_add_sub:Add1|addcore:adder|_~4                                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~5                                  ; |alarm|lpm_add_sub:Add1|addcore:adder|_~5                                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~6                                  ; |alarm|lpm_add_sub:Add1|addcore:adder|_~6                                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~7                                  ; |alarm|lpm_add_sub:Add1|addcore:adder|_~7                                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~8                                  ; |alarm|lpm_add_sub:Add1|addcore:adder|_~8                                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~9                                  ; |alarm|lpm_add_sub:Add1|addcore:adder|_~9                                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~10                                 ; |alarm|lpm_add_sub:Add1|addcore:adder|_~10                                      ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~11                                 ; |alarm|lpm_add_sub:Add1|addcore:adder|_~11                                      ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~12                                 ; |alarm|lpm_add_sub:Add1|addcore:adder|_~12                                      ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~13                                 ; |alarm|lpm_add_sub:Add1|addcore:adder|_~13                                      ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~14                                 ; |alarm|lpm_add_sub:Add1|addcore:adder|_~14                                      ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~15                                 ; |alarm|lpm_add_sub:Add1|addcore:adder|_~15                                      ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; sout             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]      ; sout             ;
+; |alarm|lpm_add_sub:Add0|result_node[0]                                     ; |alarm|lpm_add_sub:Add0|result_node[0]                                          ; out0             ;
+; |alarm|lpm_add_sub:Add0|result_node[1]                                     ; |alarm|lpm_add_sub:Add0|result_node[1]                                          ; out0             ;
+; |alarm|lpm_add_sub:Add0|result_node[2]                                     ; |alarm|lpm_add_sub:Add0|result_node[2]                                          ; out0             ;
+; |alarm|lpm_add_sub:Add0|result_node[3]                                     ; |alarm|lpm_add_sub:Add0|result_node[3]                                          ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[0]                             ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~0                                  ; |alarm|lpm_add_sub:Add0|addcore:adder|_~0                                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~1                                  ; |alarm|lpm_add_sub:Add0|addcore:adder|_~1                                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~2                                  ; |alarm|lpm_add_sub:Add0|addcore:adder|_~2                                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~3                                  ; |alarm|lpm_add_sub:Add0|addcore:adder|_~3                                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[3]~1                      ; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[3]~1                           ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[3]                             ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[2]                             ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[1]                             ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~1                  ; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~1                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~2                  ; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~2                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~3                  ; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~3                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                    ; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                    ; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                    ; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                         ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~4                                  ; |alarm|lpm_add_sub:Add0|addcore:adder|_~4                                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~5                                  ; |alarm|lpm_add_sub:Add0|addcore:adder|_~5                                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~6                                  ; |alarm|lpm_add_sub:Add0|addcore:adder|_~6                                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~7                                  ; |alarm|lpm_add_sub:Add0|addcore:adder|_~7                                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~8                                  ; |alarm|lpm_add_sub:Add0|addcore:adder|_~8                                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~9                                  ; |alarm|lpm_add_sub:Add0|addcore:adder|_~9                                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~10                                 ; |alarm|lpm_add_sub:Add0|addcore:adder|_~10                                      ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~11                                 ; |alarm|lpm_add_sub:Add0|addcore:adder|_~11                                      ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~12                                 ; |alarm|lpm_add_sub:Add0|addcore:adder|_~12                                      ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~13                                 ; |alarm|lpm_add_sub:Add0|addcore:adder|_~13                                      ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~14                                 ; |alarm|lpm_add_sub:Add0|addcore:adder|_~14                                      ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~15                                 ; |alarm|lpm_add_sub:Add0|addcore:adder|_~15                                      ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; sout             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]      ; sout             ;
++----------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                        ;
++----------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+; Node Name                                                                  ; Output Port Name                                                                ; Output Port Type ;
++----------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+; |alarm|always1~3                                                           ; |alarm|always1~3                                                                ; out0             ;
+; |alarm|hr_low_alarm_o~0                                                    ; |alarm|hr_low_alarm_o~0                                                         ; out              ;
+; |alarm|hr_low_alarm_o~1                                                    ; |alarm|hr_low_alarm_o~1                                                         ; out              ;
+; |alarm|hr_low_alarm_o~2                                                    ; |alarm|hr_low_alarm_o~2                                                         ; out              ;
+; |alarm|hr_low_alarm_o~3                                                    ; |alarm|hr_low_alarm_o~3                                                         ; out              ;
+; |alarm|hr_high_alarm_o~0                                                   ; |alarm|hr_high_alarm_o~0                                                        ; out              ;
+; |alarm|hr_high_alarm_o~1                                                   ; |alarm|hr_high_alarm_o~1                                                        ; out              ;
+; |alarm|hr_high_alarm_o~2                                                   ; |alarm|hr_high_alarm_o~2                                                        ; out              ;
+; |alarm|hr_high_alarm_o~3                                                   ; |alarm|hr_high_alarm_o~3                                                        ; out              ;
+; |alarm|hr_high_alarm_o~4                                                   ; |alarm|hr_high_alarm_o~4                                                        ; out              ;
+; |alarm|hr_high_alarm_o~5                                                   ; |alarm|hr_high_alarm_o~5                                                        ; out              ;
+; |alarm|hr_high_alarm_o~6                                                   ; |alarm|hr_high_alarm_o~6                                                        ; out              ;
+; |alarm|hr_high_alarm_o~7                                                   ; |alarm|hr_high_alarm_o~7                                                        ; out              ;
+; |alarm|hr_low_alarm_o~4                                                    ; |alarm|hr_low_alarm_o~4                                                         ; out              ;
+; |alarm|hr_low_alarm_o~5                                                    ; |alarm|hr_low_alarm_o~5                                                         ; out              ;
+; |alarm|hr_low_alarm_o~6                                                    ; |alarm|hr_low_alarm_o~6                                                         ; out              ;
+; |alarm|hr_low_alarm_o~7                                                    ; |alarm|hr_low_alarm_o~7                                                         ; out              ;
+; |alarm|hr_high_alarm_o~8                                                   ; |alarm|hr_high_alarm_o~8                                                        ; out              ;
+; |alarm|hr_high_alarm_o~9                                                   ; |alarm|hr_high_alarm_o~9                                                        ; out              ;
+; |alarm|hr_high_alarm_o~10                                                  ; |alarm|hr_high_alarm_o~10                                                       ; out              ;
+; |alarm|hr_high_alarm_o~11                                                  ; |alarm|hr_high_alarm_o~11                                                       ; out              ;
+; |alarm|hr_low_alarm_o~8                                                    ; |alarm|hr_low_alarm_o~8                                                         ; out              ;
+; |alarm|hr_low_alarm_o~9                                                    ; |alarm|hr_low_alarm_o~9                                                         ; out              ;
+; |alarm|hr_low_alarm_o~10                                                   ; |alarm|hr_low_alarm_o~10                                                        ; out              ;
+; |alarm|hr_low_alarm_o~11                                                   ; |alarm|hr_low_alarm_o~11                                                        ; out              ;
+; |alarm|hr_high_alarm_o~12                                                  ; |alarm|hr_high_alarm_o~12                                                       ; out              ;
+; |alarm|hr_high_alarm_o~13                                                  ; |alarm|hr_high_alarm_o~13                                                       ; out              ;
+; |alarm|hr_high_alarm_o~14                                                  ; |alarm|hr_high_alarm_o~14                                                       ; out              ;
+; |alarm|hr_high_alarm_o~15                                                  ; |alarm|hr_high_alarm_o~15                                                       ; out              ;
+; |alarm|hr_low_alarm_o~12                                                   ; |alarm|hr_low_alarm_o~12                                                        ; out              ;
+; |alarm|hr_low_alarm_o~13                                                   ; |alarm|hr_low_alarm_o~13                                                        ; out              ;
+; |alarm|hr_low_alarm_o~14                                                   ; |alarm|hr_low_alarm_o~14                                                        ; out              ;
+; |alarm|hr_low_alarm_o~15                                                   ; |alarm|hr_low_alarm_o~15                                                        ; out              ;
+; |alarm|hr_high_alarm_o~16                                                  ; |alarm|hr_high_alarm_o~16                                                       ; out              ;
+; |alarm|hr_high_alarm_o~17                                                  ; |alarm|hr_high_alarm_o~17                                                       ; out              ;
+; |alarm|hr_high_alarm_o~18                                                  ; |alarm|hr_high_alarm_o~18                                                       ; out              ;
+; |alarm|hr_high_alarm_o~19                                                  ; |alarm|hr_high_alarm_o~19                                                       ; out              ;
+; |alarm|hr_low_alarm_o~16                                                   ; |alarm|hr_low_alarm_o~16                                                        ; out              ;
+; |alarm|hr_low_alarm_o~17                                                   ; |alarm|hr_low_alarm_o~17                                                        ; out              ;
+; |alarm|hr_low_alarm_o~18                                                   ; |alarm|hr_low_alarm_o~18                                                        ; out              ;
+; |alarm|hr_low_alarm_o~19                                                   ; |alarm|hr_low_alarm_o~19                                                        ; out              ;
+; |alarm|always2~0                                                           ; |alarm|always2~0                                                                ; out0             ;
+; |alarm|always2~3                                                           ; |alarm|always2~3                                                                ; out0             ;
+; |alarm|always2~4                                                           ; |alarm|always2~4                                                                ; out0             ;
+; |alarm|hr_low_alarm_o[0]~reg0                                              ; |alarm|hr_low_alarm_o[0]~reg0                                                   ; regout           ;
+; |alarm|LED_hr~0                                                            ; |alarm|LED_hr~0                                                                 ; out0             ;
+; |alarm|hr_low_alarm_o[1]~reg0                                              ; |alarm|hr_low_alarm_o[1]~reg0                                                   ; regout           ;
+; |alarm|hr_low_alarm_o[2]~reg0                                              ; |alarm|hr_low_alarm_o[2]~reg0                                                   ; regout           ;
+; |alarm|hr_low_alarm_o[3]~reg0                                              ; |alarm|hr_low_alarm_o[3]~reg0                                                   ; regout           ;
+; |alarm|hr_high_alarm_o[0]~reg0                                             ; |alarm|hr_high_alarm_o[0]~reg0                                                  ; regout           ;
+; |alarm|hr_high_alarm_o[1]~reg0                                             ; |alarm|hr_high_alarm_o[1]~reg0                                                  ; regout           ;
+; |alarm|hr_high_alarm_o[2]~reg0                                             ; |alarm|hr_high_alarm_o[2]~reg0                                                  ; regout           ;
+; |alarm|hr_high_alarm_o[3]~reg0                                             ; |alarm|hr_high_alarm_o[3]~reg0                                                  ; regout           ;
+; |alarm|hr_high_alarm_i[0]                                                  ; |alarm|hr_high_alarm_i[0]                                                       ; out              ;
+; |alarm|hr_high_alarm_i[1]                                                  ; |alarm|hr_high_alarm_i[1]                                                       ; out              ;
+; |alarm|hr_high_alarm_i[2]                                                  ; |alarm|hr_high_alarm_i[2]                                                       ; out              ;
+; |alarm|hr_high_alarm_i[3]                                                  ; |alarm|hr_high_alarm_i[3]                                                       ; out              ;
+; |alarm|hr_low_alarm_i[0]                                                   ; |alarm|hr_low_alarm_i[0]                                                        ; out              ;
+; |alarm|hr_low_alarm_i[1]                                                   ; |alarm|hr_low_alarm_i[1]                                                        ; out              ;
+; |alarm|hr_low_alarm_i[2]                                                   ; |alarm|hr_low_alarm_i[2]                                                        ; out              ;
+; |alarm|hr_low_alarm_i[3]                                                   ; |alarm|hr_low_alarm_i[3]                                                        ; out              ;
+; |alarm|hr_high_alarm_o[0]                                                  ; |alarm|hr_high_alarm_o[0]                                                       ; pin_out          ;
+; |alarm|hr_high_alarm_o[1]                                                  ; |alarm|hr_high_alarm_o[1]                                                       ; pin_out          ;
+; |alarm|hr_high_alarm_o[2]                                                  ; |alarm|hr_high_alarm_o[2]                                                       ; pin_out          ;
+; |alarm|hr_high_alarm_o[3]                                                  ; |alarm|hr_high_alarm_o[3]                                                       ; pin_out          ;
+; |alarm|hr_low_alarm_o[0]                                                   ; |alarm|hr_low_alarm_o[0]                                                        ; pin_out          ;
+; |alarm|hr_low_alarm_o[1]                                                   ; |alarm|hr_low_alarm_o[1]                                                        ; pin_out          ;
+; |alarm|hr_low_alarm_o[2]                                                   ; |alarm|hr_low_alarm_o[2]                                                        ; pin_out          ;
+; |alarm|hr_low_alarm_o[3]                                                   ; |alarm|hr_low_alarm_o[3]                                                        ; pin_out          ;
+; |alarm|sec_high_z_i[1]                                                     ; |alarm|sec_high_z_i[1]                                                          ; out              ;
+; |alarm|sec_high_z_i[3]                                                     ; |alarm|sec_high_z_i[3]                                                          ; out              ;
+; |alarm|turn                                                                ; |alarm|turn                                                                     ; out              ;
+; |alarm|LED_hr                                                              ; |alarm|LED_hr                                                                   ; pin_out          ;
+; |alarm|LessThan0~0                                                         ; |alarm|LessThan0~0                                                              ; out0             ;
+; |alarm|LessThan0~1                                                         ; |alarm|LessThan0~1                                                              ; out0             ;
+; |alarm|LessThan0~2                                                         ; |alarm|LessThan0~2                                                              ; out0             ;
+; |alarm|LessThan0~3                                                         ; |alarm|LessThan0~3                                                              ; out0             ;
+; |alarm|LessThan0~4                                                         ; |alarm|LessThan0~4                                                              ; out0             ;
+; |alarm|LessThan0~5                                                         ; |alarm|LessThan0~5                                                              ; out0             ;
+; |alarm|LessThan0~6                                                         ; |alarm|LessThan0~6                                                              ; out0             ;
+; |alarm|LessThan0~7                                                         ; |alarm|LessThan0~7                                                              ; out0             ;
+; |alarm|LessThan0~8                                                         ; |alarm|LessThan0~8                                                              ; out0             ;
+; |alarm|LessThan0~9                                                         ; |alarm|LessThan0~9                                                              ; out0             ;
+; |alarm|LessThan0~10                                                        ; |alarm|LessThan0~10                                                             ; out0             ;
+; |alarm|LessThan0~11                                                        ; |alarm|LessThan0~11                                                             ; out0             ;
+; |alarm|LessThan0~12                                                        ; |alarm|LessThan0~12                                                             ; out0             ;
+; |alarm|LessThan1~0                                                         ; |alarm|LessThan1~0                                                              ; out0             ;
+; |alarm|LessThan1~1                                                         ; |alarm|LessThan1~1                                                              ; out0             ;
+; |alarm|LessThan1~2                                                         ; |alarm|LessThan1~2                                                              ; out0             ;
+; |alarm|LessThan1~3                                                         ; |alarm|LessThan1~3                                                              ; out0             ;
+; |alarm|LessThan1~4                                                         ; |alarm|LessThan1~4                                                              ; out0             ;
+; |alarm|LessThan1~5                                                         ; |alarm|LessThan1~5                                                              ; out0             ;
+; |alarm|LessThan1~6                                                         ; |alarm|LessThan1~6                                                              ; out0             ;
+; |alarm|LessThan1~7                                                         ; |alarm|LessThan1~7                                                              ; out0             ;
+; |alarm|LessThan1~8                                                         ; |alarm|LessThan1~8                                                              ; out0             ;
+; |alarm|LessThan1~9                                                         ; |alarm|LessThan1~9                                                              ; out0             ;
+; |alarm|LessThan1~10                                                        ; |alarm|LessThan1~10                                                             ; out0             ;
+; |alarm|LessThan1~11                                                        ; |alarm|LessThan1~11                                                             ; out0             ;
+; |alarm|LessThan1~12                                                        ; |alarm|LessThan1~12                                                             ; out0             ;
+; |alarm|Equal0~0                                                            ; |alarm|Equal0~0                                                                 ; out0             ;
+; |alarm|Equal1~0                                                            ; |alarm|Equal1~0                                                                 ; out0             ;
+; |alarm|Equal2~0                                                            ; |alarm|Equal2~0                                                                 ; out0             ;
+; |alarm|Equal4~0                                                            ; |alarm|Equal4~0                                                                 ; out0             ;
+; |alarm|Equal4~1                                                            ; |alarm|Equal4~1                                                                 ; out0             ;
+; |alarm|Equal4~2                                                            ; |alarm|Equal4~2                                                                 ; out0             ;
+; |alarm|Equal4~3                                                            ; |alarm|Equal4~3                                                                 ; out0             ;
+; |alarm|Equal4~4                                                            ; |alarm|Equal4~4                                                                 ; out0             ;
+; |alarm|lpm_add_sub:Add1|result_node[0]                                     ; |alarm|lpm_add_sub:Add1|result_node[0]                                          ; out0             ;
+; |alarm|lpm_add_sub:Add1|result_node[1]                                     ; |alarm|lpm_add_sub:Add1|result_node[1]                                          ; out0             ;
+; |alarm|lpm_add_sub:Add1|result_node[2]                                     ; |alarm|lpm_add_sub:Add1|result_node[2]                                          ; out0             ;
+; |alarm|lpm_add_sub:Add1|result_node[3]                                     ; |alarm|lpm_add_sub:Add1|result_node[3]                                          ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[0]                             ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~0                                  ; |alarm|lpm_add_sub:Add1|addcore:adder|_~0                                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~1                                  ; |alarm|lpm_add_sub:Add1|addcore:adder|_~1                                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~2                                  ; |alarm|lpm_add_sub:Add1|addcore:adder|_~2                                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~3                                  ; |alarm|lpm_add_sub:Add1|addcore:adder|_~3                                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[3]~1                      ; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[3]~1                           ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[3]                             ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[2]                             ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; |alarm|lpm_add_sub:Add1|addcore:adder|datab_node[1]                             ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~1                  ; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~1                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~2                  ; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~2                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~3                  ; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~3                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                    ; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                    ; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                    ; |alarm|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                         ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~4                                  ; |alarm|lpm_add_sub:Add1|addcore:adder|_~4                                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~5                                  ; |alarm|lpm_add_sub:Add1|addcore:adder|_~5                                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~6                                  ; |alarm|lpm_add_sub:Add1|addcore:adder|_~6                                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~7                                  ; |alarm|lpm_add_sub:Add1|addcore:adder|_~7                                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~8                                  ; |alarm|lpm_add_sub:Add1|addcore:adder|_~8                                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~9                                  ; |alarm|lpm_add_sub:Add1|addcore:adder|_~9                                       ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~10                                 ; |alarm|lpm_add_sub:Add1|addcore:adder|_~10                                      ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~11                                 ; |alarm|lpm_add_sub:Add1|addcore:adder|_~11                                      ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~12                                 ; |alarm|lpm_add_sub:Add1|addcore:adder|_~12                                      ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~13                                 ; |alarm|lpm_add_sub:Add1|addcore:adder|_~13                                      ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~14                                 ; |alarm|lpm_add_sub:Add1|addcore:adder|_~14                                      ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|_~15                                 ; |alarm|lpm_add_sub:Add1|addcore:adder|_~15                                      ; out0             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; sout             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |alarm|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]      ; sout             ;
+; |alarm|lpm_add_sub:Add0|result_node[0]                                     ; |alarm|lpm_add_sub:Add0|result_node[0]                                          ; out0             ;
+; |alarm|lpm_add_sub:Add0|result_node[1]                                     ; |alarm|lpm_add_sub:Add0|result_node[1]                                          ; out0             ;
+; |alarm|lpm_add_sub:Add0|result_node[2]                                     ; |alarm|lpm_add_sub:Add0|result_node[2]                                          ; out0             ;
+; |alarm|lpm_add_sub:Add0|result_node[3]                                     ; |alarm|lpm_add_sub:Add0|result_node[3]                                          ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[0]                             ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~0                                  ; |alarm|lpm_add_sub:Add0|addcore:adder|_~0                                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~1                                  ; |alarm|lpm_add_sub:Add0|addcore:adder|_~1                                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~2                                  ; |alarm|lpm_add_sub:Add0|addcore:adder|_~2                                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~3                                  ; |alarm|lpm_add_sub:Add0|addcore:adder|_~3                                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[3]~1                      ; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[3]~1                           ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[3]                             ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[2]                             ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; |alarm|lpm_add_sub:Add0|addcore:adder|datab_node[1]                             ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~1                  ; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~1                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~2                  ; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~2                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~3                  ; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~3                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                    ; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                    ; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                    ; |alarm|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                         ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~4                                  ; |alarm|lpm_add_sub:Add0|addcore:adder|_~4                                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~5                                  ; |alarm|lpm_add_sub:Add0|addcore:adder|_~5                                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~6                                  ; |alarm|lpm_add_sub:Add0|addcore:adder|_~6                                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~7                                  ; |alarm|lpm_add_sub:Add0|addcore:adder|_~7                                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~8                                  ; |alarm|lpm_add_sub:Add0|addcore:adder|_~8                                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~9                                  ; |alarm|lpm_add_sub:Add0|addcore:adder|_~9                                       ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~10                                 ; |alarm|lpm_add_sub:Add0|addcore:adder|_~10                                      ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~11                                 ; |alarm|lpm_add_sub:Add0|addcore:adder|_~11                                      ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~12                                 ; |alarm|lpm_add_sub:Add0|addcore:adder|_~12                                      ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~13                                 ; |alarm|lpm_add_sub:Add0|addcore:adder|_~13                                      ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~14                                 ; |alarm|lpm_add_sub:Add0|addcore:adder|_~14                                      ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|_~15                                 ; |alarm|lpm_add_sub:Add0|addcore:adder|_~15                                      ; out0             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; sout             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |alarm|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]      ; sout             ;
++----------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Wed Mar 13 08:40:14 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off alarm -c alarm
+Info: Using vector source file "D:/HDL/sub_module/alarm/alarm.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       7.66 %
+Info: Number of transitions in simulation is 4208
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 174 megabytes
+    Info: Processing ended: Wed Mar 13 08:40:15 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

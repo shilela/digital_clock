@@ -1,0 +1,66 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 10.628 ns
+From           : clk
+To             : hr_low_setting_o[3]~reg0
+From Clock     : --
+To Clock       : alarm_clk
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 11.772 ns
+From           : hr_low_setting_o[0]~reg0
+To             : hr_low_setting_o[0]
+From Clock     : alarm_clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 14.525 ns
+From           : mode
+To             : LED_hr
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -3.837 ns
+From           : change
+To             : change_t
+From Clock     : --
+To Clock       : alarm_clk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'alarm_clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 202.14 MHz ( period = 4.947 ns )
+From           : min_low_setting_o[1]~reg0
+To             : min_low_setting_o[3]~reg0
+From Clock     : alarm_clk
+To Clock       : alarm_clk
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

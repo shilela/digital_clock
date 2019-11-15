@@ -1,0 +1,176 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 248 304)
+	(text "display" (rect 5 0 40 12)(font "Arial" ))
+	(text "inst" (rect 8 272 25 284)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "alarm_clk" (rect 0 0 47 12)(font "Arial" ))
+		(text "alarm_clk" (rect 21 27 68 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "mode" (rect 0 0 27 12)(font "Arial" ))
+		(text "mode" (rect 21 43 48 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "alarm_set" (rect 0 0 48 12)(font "Arial" ))
+		(text "alarm_set" (rect 21 59 69 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "hr_high_timing[3..0]" (rect 0 0 96 12)(font "Arial" ))
+		(text "hr_high_timing[3..0]" (rect 21 75 117 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "hr_low_timing[3..0]" (rect 0 0 92 12)(font "Arial" ))
+		(text "hr_low_timing[3..0]" (rect 21 91 113 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "min_high_timing[3..0]" (rect 0 0 105 12)(font "Arial" ))
+		(text "min_high_timing[3..0]" (rect 21 107 126 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "min_low_timing[3..0]" (rect 0 0 100 12)(font "Arial" ))
+		(text "min_low_timing[3..0]" (rect 21 123 121 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "sec_high_timing[3..0]" (rect 0 0 105 12)(font "Arial" ))
+		(text "sec_high_timing[3..0]" (rect 21 139 126 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "sec_low_timing[3..0]" (rect 0 0 100 12)(font "Arial" ))
+		(text "sec_low_timing[3..0]" (rect 21 155 121 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "hr_high_setting[3..0]" (rect 0 0 100 12)(font "Arial" ))
+		(text "hr_high_setting[3..0]" (rect 21 171 121 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "hr_low_setting[3..0]" (rect 0 0 95 12)(font "Arial" ))
+		(text "hr_low_setting[3..0]" (rect 21 187 116 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "min_high_setting[3..0]" (rect 0 0 108 12)(font "Arial" ))
+		(text "min_high_setting[3..0]" (rect 21 203 129 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "min_low_setting[3..0]" (rect 0 0 103 12)(font "Arial" ))
+		(text "min_low_setting[3..0]" (rect 21 219 124 231)(font "Arial" ))
+		(line (pt 0 224)(pt 16 224)(line_width 3))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "hr_high_alarm[3..0]" (rect 0 0 94 12)(font "Arial" ))
+		(text "hr_high_alarm[3..0]" (rect 21 235 115 247)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240)(line_width 3))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "hr_low_alarm[3..0]" (rect 0 0 89 12)(font "Arial" ))
+		(text "hr_low_alarm[3..0]" (rect 21 251 110 263)(font "Arial" ))
+		(line (pt 0 256)(pt 16 256)(line_width 3))
+	)
+	(port
+		(pt 232 32)
+		(output)
+		(text "hr_high[3..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "hr_high[3..0]" (rect 150 27 211 39)(font "Arial" ))
+		(line (pt 232 32)(pt 216 32)(line_width 3))
+	)
+	(port
+		(pt 232 48)
+		(output)
+		(text "hr_low[3..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "hr_low[3..0]" (rect 155 43 211 55)(font "Arial" ))
+		(line (pt 232 48)(pt 216 48)(line_width 3))
+	)
+	(port
+		(pt 232 64)
+		(output)
+		(text "min_high[3..0]" (rect 0 0 69 12)(font "Arial" ))
+		(text "min_high[3..0]" (rect 142 59 211 71)(font "Arial" ))
+		(line (pt 232 64)(pt 216 64)(line_width 3))
+	)
+	(port
+		(pt 232 80)
+		(output)
+		(text "min_low[3..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "min_low[3..0]" (rect 147 75 211 87)(font "Arial" ))
+		(line (pt 232 80)(pt 216 80)(line_width 3))
+	)
+	(port
+		(pt 232 96)
+		(output)
+		(text "sec_high[3..0]" (rect 0 0 69 12)(font "Arial" ))
+		(text "sec_high[3..0]" (rect 142 91 211 103)(font "Arial" ))
+		(line (pt 232 96)(pt 216 96)(line_width 3))
+	)
+	(port
+		(pt 232 112)
+		(output)
+		(text "sec_low[3..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "sec_low[3..0]" (rect 147 107 211 119)(font "Arial" ))
+		(line (pt 232 112)(pt 216 112)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 216 272)(line_width 1))
+	)
+)

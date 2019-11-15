@@ -1,0 +1,844 @@
+Simulator report for timing
+Wed Mar 13 08:25:33 2019
+Quartus II 64-Bit Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 420 nodes    ;
+; Simulation Coverage         ;      26.03 % ;
+; Total Number of Transitions ; 4637         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone      ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      26.03 % ;
+; Total nodes checked                                 ; 420          ;
+; Total output ports checked                          ; 438          ;
+; Total output ports with complete 1/0-value coverage ; 114          ;
+; Total output ports with no 1/0-value coverage       ; 246          ;
+; Total output ports with no 1-value coverage         ; 268          ;
+; Total output ports with no 0-value coverage         ; 302          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                       ;
++-----------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; Node Name                                                                   ; Output Port Name                                                                 ; Output Port Type ;
++-----------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; |timing|sec_low_timing_o~0                                                  ; |timing|sec_low_timing_o~0                                                       ; out              ;
+; |timing|sec_low_timing_o~1                                                  ; |timing|sec_low_timing_o~1                                                       ; out              ;
+; |timing|sec_low_timing_o~2                                                  ; |timing|sec_low_timing_o~2                                                       ; out              ;
+; |timing|sec_low_timing_o~3                                                  ; |timing|sec_low_timing_o~3                                                       ; out              ;
+; |timing|sec_low_timing_o~4                                                  ; |timing|sec_low_timing_o~4                                                       ; out              ;
+; |timing|sec_low_timing_o~5                                                  ; |timing|sec_low_timing_o~5                                                       ; out              ;
+; |timing|sec_low_timing_o~6                                                  ; |timing|sec_low_timing_o~6                                                       ; out              ;
+; |timing|sec_low_timing_o~7                                                  ; |timing|sec_low_timing_o~7                                                       ; out              ;
+; |timing|sec_high_timing_o~0                                                 ; |timing|sec_high_timing_o~0                                                      ; out              ;
+; |timing|sec_high_timing_o~1                                                 ; |timing|sec_high_timing_o~1                                                      ; out              ;
+; |timing|sec_high_timing_o~2                                                 ; |timing|sec_high_timing_o~2                                                      ; out              ;
+; |timing|sec_high_timing_o~3                                                 ; |timing|sec_high_timing_o~3                                                      ; out              ;
+; |timing|sec_high_timing_o~5                                                 ; |timing|sec_high_timing_o~5                                                      ; out              ;
+; |timing|sec_high_timing_o~6                                                 ; |timing|sec_high_timing_o~6                                                      ; out              ;
+; |timing|sec_high_timing_o~7                                                 ; |timing|sec_high_timing_o~7                                                      ; out              ;
+; |timing|sec_high_timing_o~9                                                 ; |timing|sec_high_timing_o~9                                                      ; out              ;
+; |timing|sec_high_timing_o~10                                                ; |timing|sec_high_timing_o~10                                                     ; out              ;
+; |timing|sec_high_timing_o~11                                                ; |timing|sec_high_timing_o~11                                                     ; out              ;
+; |timing|sec_low_timing_o[0]~reg0                                            ; |timing|sec_low_timing_o[0]~reg0                                                 ; regout           ;
+; |timing|carry_sec~0                                                         ; |timing|carry_sec~0                                                              ; out0             ;
+; |timing|min_low_timing_o~2                                                  ; |timing|min_low_timing_o~2                                                       ; out              ;
+; |timing|sec_high_timing_o[0]~reg0                                           ; |timing|sec_high_timing_o[0]~reg0                                                ; regout           ;
+; |timing|always6~2                                                           ; |timing|always6~2                                                                ; out0             ;
+; |timing|always6~3                                                           ; |timing|always6~3                                                                ; out0             ;
+; |timing|always6~4                                                           ; |timing|always6~4                                                                ; out0             ;
+; |timing|always6~5                                                           ; |timing|always6~5                                                                ; out0             ;
+; |timing|always6~9                                                           ; |timing|always6~9                                                                ; out0             ;
+; |timing|always6~10                                                          ; |timing|always6~10                                                               ; out0             ;
+; |timing|sec_high_timing_o[1]~reg0                                           ; |timing|sec_high_timing_o[1]~reg0                                                ; regout           ;
+; |timing|sec_high_timing_o[2]~reg0                                           ; |timing|sec_high_timing_o[2]~reg0                                                ; regout           ;
+; |timing|sec_low_timing_o[1]~reg0                                            ; |timing|sec_low_timing_o[1]~reg0                                                 ; regout           ;
+; |timing|sec_low_timing_o[2]~reg0                                            ; |timing|sec_low_timing_o[2]~reg0                                                 ; regout           ;
+; |timing|sec_low_timing_o[3]~reg0                                            ; |timing|sec_low_timing_o[3]~reg0                                                 ; regout           ;
+; |timing|mode                                                                ; |timing|mode                                                                     ; out              ;
+; |timing|reset_sec                                                           ; |timing|reset_sec                                                                ; out              ;
+; |timing|clk                                                                 ; |timing|clk                                                                      ; out              ;
+; |timing|hr_high_timing_i[0]                                                 ; |timing|hr_high_timing_i[0]                                                      ; out              ;
+; |timing|hr_low_timing_i[0]                                                  ; |timing|hr_low_timing_i[0]                                                       ; out              ;
+; |timing|min_high_timing_i[1]                                                ; |timing|min_high_timing_i[1]                                                     ; out              ;
+; |timing|min_low_timing_i[1]                                                 ; |timing|min_low_timing_i[1]                                                      ; out              ;
+; |timing|sec_high_timing_o[0]                                                ; |timing|sec_high_timing_o[0]                                                     ; pin_out          ;
+; |timing|sec_high_timing_o[1]                                                ; |timing|sec_high_timing_o[1]                                                     ; pin_out          ;
+; |timing|sec_high_timing_o[2]                                                ; |timing|sec_high_timing_o[2]                                                     ; pin_out          ;
+; |timing|sec_low_timing_o[0]                                                 ; |timing|sec_low_timing_o[0]                                                      ; pin_out          ;
+; |timing|sec_low_timing_o[1]                                                 ; |timing|sec_low_timing_o[1]                                                      ; pin_out          ;
+; |timing|sec_low_timing_o[2]                                                 ; |timing|sec_low_timing_o[2]                                                      ; pin_out          ;
+; |timing|sec_low_timing_o[3]                                                 ; |timing|sec_low_timing_o[3]                                                      ; pin_out          ;
+; |timing|Equal0~0                                                            ; |timing|Equal0~0                                                                 ; out0             ;
+; |timing|Equal1~0                                                            ; |timing|Equal1~0                                                                 ; out0             ;
+; |timing|Equal7~0                                                            ; |timing|Equal7~0                                                                 ; out0             ;
+; |timing|Equal8~0                                                            ; |timing|Equal8~0                                                                 ; out0             ;
+; |timing|Equal9~0                                                            ; |timing|Equal9~0                                                                 ; out0             ;
+; |timing|Equal10~0                                                           ; |timing|Equal10~0                                                                ; out0             ;
+; |timing|Equal13~0                                                           ; |timing|Equal13~0                                                                ; out0             ;
+; |timing|Equal14~0                                                           ; |timing|Equal14~0                                                                ; out0             ;
+; |timing|lpm_add_sub:Add2|result_node[1]                                     ; |timing|lpm_add_sub:Add2|result_node[1]                                          ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[1]                    ; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[1]                         ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |timing|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; sout             ;
+; |timing|lpm_add_sub:Add1|result_node[0]                                     ; |timing|lpm_add_sub:Add1|result_node[0]                                          ; out0             ;
+; |timing|lpm_add_sub:Add1|result_node[1]                                     ; |timing|lpm_add_sub:Add1|result_node[1]                                          ; out0             ;
+; |timing|lpm_add_sub:Add1|result_node[2]                                     ; |timing|lpm_add_sub:Add1|result_node[2]                                          ; out0             ;
+; |timing|lpm_add_sub:Add1|result_node[3]                                     ; |timing|lpm_add_sub:Add1|result_node[3]                                          ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; |timing|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; |timing|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~0                                  ; |timing|lpm_add_sub:Add1|addcore:adder|_~0                                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~3                                  ; |timing|lpm_add_sub:Add1|addcore:adder|_~3                                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~2                  ; |timing|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~2                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~3                  ; |timing|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~3                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                    ; |timing|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                    ; |timing|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                    ; |timing|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                         ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~8                                  ; |timing|lpm_add_sub:Add1|addcore:adder|_~8                                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~9                                  ; |timing|lpm_add_sub:Add1|addcore:adder|_~9                                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~11                                 ; |timing|lpm_add_sub:Add1|addcore:adder|_~11                                      ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~12                                 ; |timing|lpm_add_sub:Add1|addcore:adder|_~12                                      ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~14                                 ; |timing|lpm_add_sub:Add1|addcore:adder|_~14                                      ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~15                                 ; |timing|lpm_add_sub:Add1|addcore:adder|_~15                                      ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |timing|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |timing|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |timing|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |timing|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |timing|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; sout             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |timing|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |timing|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]      ; sout             ;
+; |timing|lpm_add_sub:Add0|result_node[0]                                     ; |timing|lpm_add_sub:Add0|result_node[0]                                          ; out0             ;
+; |timing|lpm_add_sub:Add0|result_node[1]                                     ; |timing|lpm_add_sub:Add0|result_node[1]                                          ; out0             ;
+; |timing|lpm_add_sub:Add0|result_node[2]                                     ; |timing|lpm_add_sub:Add0|result_node[2]                                          ; out0             ;
+; |timing|lpm_add_sub:Add0|result_node[3]                                     ; |timing|lpm_add_sub:Add0|result_node[3]                                          ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; |timing|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; |timing|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~0                                  ; |timing|lpm_add_sub:Add0|addcore:adder|_~0                                       ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~3                                  ; |timing|lpm_add_sub:Add0|addcore:adder|_~3                                       ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~1                  ; |timing|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~1                       ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~2                  ; |timing|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~2                       ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~3                  ; |timing|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~3                       ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                    ; |timing|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                    ; |timing|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                    ; |timing|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                         ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~7                                  ; |timing|lpm_add_sub:Add0|addcore:adder|_~7                                       ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~8                                  ; |timing|lpm_add_sub:Add0|addcore:adder|_~8                                       ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~9                                  ; |timing|lpm_add_sub:Add0|addcore:adder|_~9                                       ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~10                                 ; |timing|lpm_add_sub:Add0|addcore:adder|_~10                                      ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~11                                 ; |timing|lpm_add_sub:Add0|addcore:adder|_~11                                      ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~12                                 ; |timing|lpm_add_sub:Add0|addcore:adder|_~12                                      ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~13                                 ; |timing|lpm_add_sub:Add0|addcore:adder|_~13                                      ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~14                                 ; |timing|lpm_add_sub:Add0|addcore:adder|_~14                                      ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~15                                 ; |timing|lpm_add_sub:Add0|addcore:adder|_~15                                      ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |timing|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |timing|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |timing|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |timing|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |timing|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; sout             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |timing|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |timing|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]      ; sout             ;
++-----------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                          ;
++-----------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; Node Name                                                                   ; Output Port Name                                                                 ; Output Port Type ;
++-----------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; |timing|hr_low_timing_o[1]~reg0                                             ; |timing|hr_low_timing_o[1]~reg0                                                  ; regout           ;
+; |timing|sec_high_timing_o~4                                                 ; |timing|sec_high_timing_o~4                                                      ; out              ;
+; |timing|sec_high_timing_o~8                                                 ; |timing|sec_high_timing_o~8                                                      ; out              ;
+; |timing|min_low_timing_o~0                                                  ; |timing|min_low_timing_o~0                                                       ; out              ;
+; |timing|min_low_timing_o~3                                                  ; |timing|min_low_timing_o~3                                                       ; out              ;
+; |timing|min_low_timing_o~4                                                  ; |timing|min_low_timing_o~4                                                       ; out              ;
+; |timing|min_low_timing_o~5                                                  ; |timing|min_low_timing_o~5                                                       ; out              ;
+; |timing|min_low_timing_o~8                                                  ; |timing|min_low_timing_o~8                                                       ; out              ;
+; |timing|min_low_timing_o~9                                                  ; |timing|min_low_timing_o~9                                                       ; out              ;
+; |timing|min_high_timing_o~0                                                 ; |timing|min_high_timing_o~0                                                      ; out              ;
+; |timing|min_high_timing_o~1                                                 ; |timing|min_high_timing_o~1                                                      ; out              ;
+; |timing|min_high_timing_o~3                                                 ; |timing|min_high_timing_o~3                                                      ; out              ;
+; |timing|min_high_timing_o~4                                                 ; |timing|min_high_timing_o~4                                                      ; out              ;
+; |timing|min_high_timing_o~5                                                 ; |timing|min_high_timing_o~5                                                      ; out              ;
+; |timing|min_high_timing_o~7                                                 ; |timing|min_high_timing_o~7                                                      ; out              ;
+; |timing|min_high_timing_o~8                                                 ; |timing|min_high_timing_o~8                                                      ; out              ;
+; |timing|min_high_timing_o~9                                                 ; |timing|min_high_timing_o~9                                                      ; out              ;
+; |timing|min_high_timing_o~11                                                ; |timing|min_high_timing_o~11                                                     ; out              ;
+; |timing|min_high_timing_o~12                                                ; |timing|min_high_timing_o~12                                                     ; out              ;
+; |timing|min_high_timing_o~13                                                ; |timing|min_high_timing_o~13                                                     ; out              ;
+; |timing|min_high_timing_o~15                                                ; |timing|min_high_timing_o~15                                                     ; out              ;
+; |timing|hr_high_timing_o[3]~reg0                                            ; |timing|hr_high_timing_o[3]~reg0                                                 ; regout           ;
+; |timing|carry_min~0                                                         ; |timing|carry_min~0                                                              ; out0             ;
+; |timing|hr_low_timing_o~0                                                   ; |timing|hr_low_timing_o~0                                                        ; out              ;
+; |timing|hr_low_timing_o~1                                                   ; |timing|hr_low_timing_o~1                                                        ; out              ;
+; |timing|hr_low_timing_o~3                                                   ; |timing|hr_low_timing_o~3                                                        ; out              ;
+; |timing|hr_low_timing_o~4                                                   ; |timing|hr_low_timing_o~4                                                        ; out              ;
+; |timing|hr_low_timing_o~5                                                   ; |timing|hr_low_timing_o~5                                                        ; out              ;
+; |timing|hr_low_timing_o~7                                                   ; |timing|hr_low_timing_o~7                                                        ; out              ;
+; |timing|hr_low_timing_o~8                                                   ; |timing|hr_low_timing_o~8                                                        ; out              ;
+; |timing|hr_low_timing_o~9                                                   ; |timing|hr_low_timing_o~9                                                        ; out              ;
+; |timing|hr_low_timing_o~10                                                  ; |timing|hr_low_timing_o~10                                                       ; out              ;
+; |timing|hr_low_timing_o~12                                                  ; |timing|hr_low_timing_o~12                                                       ; out              ;
+; |timing|hr_low_timing_o~13                                                  ; |timing|hr_low_timing_o~13                                                       ; out              ;
+; |timing|hr_low_timing_o~14                                                  ; |timing|hr_low_timing_o~14                                                       ; out              ;
+; |timing|min_high_timing_o[0]~reg0                                           ; |timing|min_high_timing_o[0]~reg0                                                ; regout           ;
+; |timing|always5~0                                                           ; |timing|always5~0                                                                ; out0             ;
+; |timing|hr_high_timing_o[2]~reg0                                            ; |timing|hr_high_timing_o[2]~reg0                                                 ; regout           ;
+; |timing|always5~1                                                           ; |timing|always5~1                                                                ; out0             ;
+; |timing|hr_high_timing_o~0                                                  ; |timing|hr_high_timing_o~0                                                       ; out              ;
+; |timing|hr_high_timing_o~1                                                  ; |timing|hr_high_timing_o~1                                                       ; out              ;
+; |timing|hr_high_timing_o~2                                                  ; |timing|hr_high_timing_o~2                                                       ; out              ;
+; |timing|hr_high_timing_o~4                                                  ; |timing|hr_high_timing_o~4                                                       ; out              ;
+; |timing|hr_high_timing_o~5                                                  ; |timing|hr_high_timing_o~5                                                       ; out              ;
+; |timing|hr_high_timing_o~6                                                  ; |timing|hr_high_timing_o~6                                                       ; out              ;
+; |timing|hr_high_timing_o~8                                                  ; |timing|hr_high_timing_o~8                                                       ; out              ;
+; |timing|hr_high_timing_o~9                                                  ; |timing|hr_high_timing_o~9                                                       ; out              ;
+; |timing|hr_high_timing_o~10                                                 ; |timing|hr_high_timing_o~10                                                      ; out              ;
+; |timing|hr_high_timing_o~12                                                 ; |timing|hr_high_timing_o~12                                                      ; out              ;
+; |timing|hr_high_timing_o~13                                                 ; |timing|hr_high_timing_o~13                                                      ; out              ;
+; |timing|hr_high_timing_o~14                                                 ; |timing|hr_high_timing_o~14                                                      ; out              ;
+; |timing|always6~0                                                           ; |timing|always6~0                                                                ; out0             ;
+; |timing|hr_high_timing_o[1]~reg0                                            ; |timing|hr_high_timing_o[1]~reg0                                                 ; regout           ;
+; |timing|always6~1                                                           ; |timing|always6~1                                                                ; out0             ;
+; |timing|always6~6                                                           ; |timing|always6~6                                                                ; out0             ;
+; |timing|always6~7                                                           ; |timing|always6~7                                                                ; out0             ;
+; |timing|always6~8                                                           ; |timing|always6~8                                                                ; out0             ;
+; |timing|always6~11                                                          ; |timing|always6~11                                                               ; out0             ;
+; |timing|always6~12                                                          ; |timing|always6~12                                                               ; out0             ;
+; |timing|alarm~reg0                                                          ; |timing|alarm~reg0                                                               ; regout           ;
+; |timing|always6~13                                                          ; |timing|always6~13                                                               ; out0             ;
+; |timing|always6~14                                                          ; |timing|always6~14                                                               ; out0             ;
+; |timing|always6~15                                                          ; |timing|always6~15                                                               ; out0             ;
+; |timing|always6~16                                                          ; |timing|always6~16                                                               ; out0             ;
+; |timing|always6~17                                                          ; |timing|always6~17                                                               ; out0             ;
+; |timing|alarm~0                                                             ; |timing|alarm~0                                                                  ; out              ;
+; |timing|hr_low_timing_o[2]~reg0                                             ; |timing|hr_low_timing_o[2]~reg0                                                  ; regout           ;
+; |timing|hr_low_timing_o[3]~reg0                                             ; |timing|hr_low_timing_o[3]~reg0                                                  ; regout           ;
+; |timing|min_high_timing_o[2]~reg0                                           ; |timing|min_high_timing_o[2]~reg0                                                ; regout           ;
+; |timing|min_high_timing_o[3]~reg0                                           ; |timing|min_high_timing_o[3]~reg0                                                ; regout           ;
+; |timing|min_low_timing_o[2]~reg0                                            ; |timing|min_low_timing_o[2]~reg0                                                 ; regout           ;
+; |timing|min_low_timing_o[3]~reg0                                            ; |timing|min_low_timing_o[3]~reg0                                                 ; regout           ;
+; |timing|sec_high_timing_o[3]~reg0                                           ; |timing|sec_high_timing_o[3]~reg0                                                ; regout           ;
+; |timing|hr_high_timing_i[1]                                                 ; |timing|hr_high_timing_i[1]                                                      ; out              ;
+; |timing|hr_high_timing_i[2]                                                 ; |timing|hr_high_timing_i[2]                                                      ; out              ;
+; |timing|hr_high_timing_i[3]                                                 ; |timing|hr_high_timing_i[3]                                                      ; out              ;
+; |timing|hr_low_timing_i[1]                                                  ; |timing|hr_low_timing_i[1]                                                       ; out              ;
+; |timing|hr_low_timing_i[2]                                                  ; |timing|hr_low_timing_i[2]                                                       ; out              ;
+; |timing|hr_low_timing_i[3]                                                  ; |timing|hr_low_timing_i[3]                                                       ; out              ;
+; |timing|min_high_timing_i[0]                                                ; |timing|min_high_timing_i[0]                                                     ; out              ;
+; |timing|min_high_timing_i[2]                                                ; |timing|min_high_timing_i[2]                                                     ; out              ;
+; |timing|min_high_timing_i[3]                                                ; |timing|min_high_timing_i[3]                                                     ; out              ;
+; |timing|min_low_timing_i[0]                                                 ; |timing|min_low_timing_i[0]                                                      ; out              ;
+; |timing|min_low_timing_i[2]                                                 ; |timing|min_low_timing_i[2]                                                      ; out              ;
+; |timing|min_low_timing_i[3]                                                 ; |timing|min_low_timing_i[3]                                                      ; out              ;
+; |timing|hr_high_timing_o[1]                                                 ; |timing|hr_high_timing_o[1]                                                      ; pin_out          ;
+; |timing|hr_high_timing_o[2]                                                 ; |timing|hr_high_timing_o[2]                                                      ; pin_out          ;
+; |timing|hr_high_timing_o[3]                                                 ; |timing|hr_high_timing_o[3]                                                      ; pin_out          ;
+; |timing|hr_low_timing_o[1]                                                  ; |timing|hr_low_timing_o[1]                                                       ; pin_out          ;
+; |timing|hr_low_timing_o[2]                                                  ; |timing|hr_low_timing_o[2]                                                       ; pin_out          ;
+; |timing|hr_low_timing_o[3]                                                  ; |timing|hr_low_timing_o[3]                                                       ; pin_out          ;
+; |timing|min_high_timing_o[0]                                                ; |timing|min_high_timing_o[0]                                                     ; pin_out          ;
+; |timing|min_high_timing_o[2]                                                ; |timing|min_high_timing_o[2]                                                     ; pin_out          ;
+; |timing|min_high_timing_o[3]                                                ; |timing|min_high_timing_o[3]                                                     ; pin_out          ;
+; |timing|min_low_timing_o[2]                                                 ; |timing|min_low_timing_o[2]                                                      ; pin_out          ;
+; |timing|min_low_timing_o[3]                                                 ; |timing|min_low_timing_o[3]                                                      ; pin_out          ;
+; |timing|sec_high_timing_o[3]                                                ; |timing|sec_high_timing_o[3]                                                     ; pin_out          ;
+; |timing|alarm                                                               ; |timing|alarm                                                                    ; pin_out          ;
+; |timing|Equal2~0                                                            ; |timing|Equal2~0                                                                 ; out0             ;
+; |timing|Equal3~0                                                            ; |timing|Equal3~0                                                                 ; out0             ;
+; |timing|Equal4~0                                                            ; |timing|Equal4~0                                                                 ; out0             ;
+; |timing|Equal5~0                                                            ; |timing|Equal5~0                                                                 ; out0             ;
+; |timing|Equal6~0                                                            ; |timing|Equal6~0                                                                 ; out0             ;
+; |timing|Equal11~0                                                           ; |timing|Equal11~0                                                                ; out0             ;
+; |timing|Equal12~0                                                           ; |timing|Equal12~0                                                                ; out0             ;
+; |timing|Equal15~0                                                           ; |timing|Equal15~0                                                                ; out0             ;
+; |timing|Equal16~0                                                           ; |timing|Equal16~0                                                                ; out0             ;
+; |timing|Equal18~0                                                           ; |timing|Equal18~0                                                                ; out0             ;
+; |timing|Equal19~0                                                           ; |timing|Equal19~0                                                                ; out0             ;
+; |timing|lpm_add_sub:Add5|result_node[0]                                     ; |timing|lpm_add_sub:Add5|result_node[0]                                          ; out0             ;
+; |timing|lpm_add_sub:Add5|result_node[2]                                     ; |timing|lpm_add_sub:Add5|result_node[2]                                          ; out0             ;
+; |timing|lpm_add_sub:Add5|result_node[3]                                     ; |timing|lpm_add_sub:Add5|result_node[3]                                          ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[0]~0                      ; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[0]                        ; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[0]                             ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[0]~0                  ; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[0]                    ; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~1                                  ; |timing|lpm_add_sub:Add5|addcore:adder|_~1                                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~2                                  ; |timing|lpm_add_sub:Add5|addcore:adder|_~2                                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[3]~1                      ; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[3]~1                           ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[3]                        ; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[3]                             ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[2]                        ; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[2]                             ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[1]                        ; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[1]                             ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[3]~1                  ; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[3]~1                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[2]~2                  ; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[2]~2                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[1]~3                  ; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[1]~3                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[3]                    ; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[2]                    ; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~4                                  ; |timing|lpm_add_sub:Add5|addcore:adder|_~4                                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~5                                  ; |timing|lpm_add_sub:Add5|addcore:adder|_~5                                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~6                                  ; |timing|lpm_add_sub:Add5|addcore:adder|_~6                                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~7                                  ; |timing|lpm_add_sub:Add5|addcore:adder|_~7                                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~8                                  ; |timing|lpm_add_sub:Add5|addcore:adder|_~8                                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~9                                  ; |timing|lpm_add_sub:Add5|addcore:adder|_~9                                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~10                                 ; |timing|lpm_add_sub:Add5|addcore:adder|_~10                                      ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~11                                 ; |timing|lpm_add_sub:Add5|addcore:adder|_~11                                      ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~12                                 ; |timing|lpm_add_sub:Add5|addcore:adder|_~12                                      ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~13                                 ; |timing|lpm_add_sub:Add5|addcore:adder|_~13                                      ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~14                                 ; |timing|lpm_add_sub:Add5|addcore:adder|_~14                                      ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~15                                 ; |timing|lpm_add_sub:Add5|addcore:adder|_~15                                      ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]      ; sout             ;
+; |timing|lpm_add_sub:Add4|result_node[0]                                     ; |timing|lpm_add_sub:Add4|result_node[0]                                          ; out0             ;
+; |timing|lpm_add_sub:Add4|result_node[2]                                     ; |timing|lpm_add_sub:Add4|result_node[2]                                          ; out0             ;
+; |timing|lpm_add_sub:Add4|result_node[3]                                     ; |timing|lpm_add_sub:Add4|result_node[3]                                          ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[0]~0                      ; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[0]                        ; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[0]                             ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[0]~0                  ; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[0]                    ; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~1                                  ; |timing|lpm_add_sub:Add4|addcore:adder|_~1                                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~2                                  ; |timing|lpm_add_sub:Add4|addcore:adder|_~2                                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[3]~1                      ; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[3]~1                           ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[3]                        ; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[3]                             ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[2]                        ; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[2]                             ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[1]                        ; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[1]                             ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[3]~1                  ; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[3]~1                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[2]~2                  ; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[2]~2                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[1]~3                  ; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[1]~3                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[3]                    ; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[2]                    ; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~4                                  ; |timing|lpm_add_sub:Add4|addcore:adder|_~4                                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~5                                  ; |timing|lpm_add_sub:Add4|addcore:adder|_~5                                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~6                                  ; |timing|lpm_add_sub:Add4|addcore:adder|_~6                                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~7                                  ; |timing|lpm_add_sub:Add4|addcore:adder|_~7                                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~8                                  ; |timing|lpm_add_sub:Add4|addcore:adder|_~8                                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~9                                  ; |timing|lpm_add_sub:Add4|addcore:adder|_~9                                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~10                                 ; |timing|lpm_add_sub:Add4|addcore:adder|_~10                                      ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~11                                 ; |timing|lpm_add_sub:Add4|addcore:adder|_~11                                      ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~12                                 ; |timing|lpm_add_sub:Add4|addcore:adder|_~12                                      ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~13                                 ; |timing|lpm_add_sub:Add4|addcore:adder|_~13                                      ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~14                                 ; |timing|lpm_add_sub:Add4|addcore:adder|_~14                                      ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~15                                 ; |timing|lpm_add_sub:Add4|addcore:adder|_~15                                      ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]      ; sout             ;
+; |timing|lpm_add_sub:Add3|result_node[0]                                     ; |timing|lpm_add_sub:Add3|result_node[0]                                          ; out0             ;
+; |timing|lpm_add_sub:Add3|result_node[2]                                     ; |timing|lpm_add_sub:Add3|result_node[2]                                          ; out0             ;
+; |timing|lpm_add_sub:Add3|result_node[3]                                     ; |timing|lpm_add_sub:Add3|result_node[3]                                          ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[0]~0                      ; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[0]                        ; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[0]                             ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[0]~0                  ; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[0]                    ; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~0                                  ; |timing|lpm_add_sub:Add3|addcore:adder|_~0                                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~1                                  ; |timing|lpm_add_sub:Add3|addcore:adder|_~1                                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~2                                  ; |timing|lpm_add_sub:Add3|addcore:adder|_~2                                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~3                                  ; |timing|lpm_add_sub:Add3|addcore:adder|_~3                                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[3]~1                      ; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[3]~1                           ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[3]                        ; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[3]                             ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[2]                        ; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[2]                             ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[1]                        ; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[1]                             ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[3]~1                  ; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[3]~1                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[2]~2                  ; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[2]~2                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[3]                    ; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[2]                    ; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~4                                  ; |timing|lpm_add_sub:Add3|addcore:adder|_~4                                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~5                                  ; |timing|lpm_add_sub:Add3|addcore:adder|_~5                                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~6                                  ; |timing|lpm_add_sub:Add3|addcore:adder|_~6                                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~7                                  ; |timing|lpm_add_sub:Add3|addcore:adder|_~7                                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~8                                  ; |timing|lpm_add_sub:Add3|addcore:adder|_~8                                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~10                                 ; |timing|lpm_add_sub:Add3|addcore:adder|_~10                                      ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~11                                 ; |timing|lpm_add_sub:Add3|addcore:adder|_~11                                      ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~12                                 ; |timing|lpm_add_sub:Add3|addcore:adder|_~12                                      ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~13                                 ; |timing|lpm_add_sub:Add3|addcore:adder|_~13                                      ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~14                                 ; |timing|lpm_add_sub:Add3|addcore:adder|_~14                                      ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~15                                 ; |timing|lpm_add_sub:Add3|addcore:adder|_~15                                      ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]      ; sout             ;
+; |timing|lpm_add_sub:Add2|result_node[0]                                     ; |timing|lpm_add_sub:Add2|result_node[0]                                          ; out0             ;
+; |timing|lpm_add_sub:Add2|result_node[3]                                     ; |timing|lpm_add_sub:Add2|result_node[3]                                          ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[0]~0                      ; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[0]                        ; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[0]                             ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]~0                  ; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]                    ; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~1                                  ; |timing|lpm_add_sub:Add2|addcore:adder|_~1                                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~2                                  ; |timing|lpm_add_sub:Add2|addcore:adder|_~2                                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[3]~1                      ; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[3]~1                           ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[3]                        ; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[3]                             ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[2]                        ; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[2]                             ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[1]                        ; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[1]                             ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[3]~1                  ; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[3]~1                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]~2                  ; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]~2                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[3]                    ; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~4                                  ; |timing|lpm_add_sub:Add2|addcore:adder|_~4                                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~5                                  ; |timing|lpm_add_sub:Add2|addcore:adder|_~5                                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~6                                  ; |timing|lpm_add_sub:Add2|addcore:adder|_~6                                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~7                                  ; |timing|lpm_add_sub:Add2|addcore:adder|_~7                                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~8                                  ; |timing|lpm_add_sub:Add2|addcore:adder|_~8                                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~10                                 ; |timing|lpm_add_sub:Add2|addcore:adder|_~10                                      ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~11                                 ; |timing|lpm_add_sub:Add2|addcore:adder|_~11                                      ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~13                                 ; |timing|lpm_add_sub:Add2|addcore:adder|_~13                                      ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~14                                 ; |timing|lpm_add_sub:Add2|addcore:adder|_~14                                      ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |timing|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |timing|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |timing|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]      ; sout             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[0]                             ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~1                                  ; |timing|lpm_add_sub:Add1|addcore:adder|_~1                                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~2                                  ; |timing|lpm_add_sub:Add1|addcore:adder|_~2                                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[3]~1                      ; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[3]~1                           ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[3]                             ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[2]                             ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[1]                             ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~1                  ; |timing|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~1                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~4                                  ; |timing|lpm_add_sub:Add1|addcore:adder|_~4                                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~5                                  ; |timing|lpm_add_sub:Add1|addcore:adder|_~5                                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~6                                  ; |timing|lpm_add_sub:Add1|addcore:adder|_~6                                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~7                                  ; |timing|lpm_add_sub:Add1|addcore:adder|_~7                                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~10                                 ; |timing|lpm_add_sub:Add1|addcore:adder|_~10                                      ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~13                                 ; |timing|lpm_add_sub:Add1|addcore:adder|_~13                                      ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[0]                             ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~1                                  ; |timing|lpm_add_sub:Add0|addcore:adder|_~1                                       ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~2                                  ; |timing|lpm_add_sub:Add0|addcore:adder|_~2                                       ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[3]~1                      ; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[3]~1                           ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[3]                             ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[2]                             ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[1]                             ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~4                                  ; |timing|lpm_add_sub:Add0|addcore:adder|_~4                                       ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~5                                  ; |timing|lpm_add_sub:Add0|addcore:adder|_~5                                       ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~6                                  ; |timing|lpm_add_sub:Add0|addcore:adder|_~6                                       ; out0             ;
++-----------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                          ;
++-----------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; Node Name                                                                   ; Output Port Name                                                                 ; Output Port Type ;
++-----------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; |timing|hr_low_timing_o[1]~reg0                                             ; |timing|hr_low_timing_o[1]~reg0                                                  ; regout           ;
+; |timing|sec_high_timing_o~4                                                 ; |timing|sec_high_timing_o~4                                                      ; out              ;
+; |timing|sec_high_timing_o~8                                                 ; |timing|sec_high_timing_o~8                                                      ; out              ;
+; |timing|min_low_timing_o~0                                                  ; |timing|min_low_timing_o~0                                                       ; out              ;
+; |timing|min_low_timing_o~1                                                  ; |timing|min_low_timing_o~1                                                       ; out              ;
+; |timing|min_low_timing_o~4                                                  ; |timing|min_low_timing_o~4                                                       ; out              ;
+; |timing|min_low_timing_o~5                                                  ; |timing|min_low_timing_o~5                                                       ; out              ;
+; |timing|min_low_timing_o~6                                                  ; |timing|min_low_timing_o~6                                                       ; out              ;
+; |timing|min_low_timing_o~7                                                  ; |timing|min_low_timing_o~7                                                       ; out              ;
+; |timing|min_low_timing_o~8                                                  ; |timing|min_low_timing_o~8                                                       ; out              ;
+; |timing|min_low_timing_o~9                                                  ; |timing|min_low_timing_o~9                                                       ; out              ;
+; |timing|min_low_timing_o~10                                                 ; |timing|min_low_timing_o~10                                                      ; out              ;
+; |timing|min_low_timing_o~11                                                 ; |timing|min_low_timing_o~11                                                      ; out              ;
+; |timing|min_high_timing_o~0                                                 ; |timing|min_high_timing_o~0                                                      ; out              ;
+; |timing|min_high_timing_o~1                                                 ; |timing|min_high_timing_o~1                                                      ; out              ;
+; |timing|min_high_timing_o~2                                                 ; |timing|min_high_timing_o~2                                                      ; out              ;
+; |timing|min_high_timing_o~3                                                 ; |timing|min_high_timing_o~3                                                      ; out              ;
+; |timing|min_high_timing_o~4                                                 ; |timing|min_high_timing_o~4                                                      ; out              ;
+; |timing|min_high_timing_o~5                                                 ; |timing|min_high_timing_o~5                                                      ; out              ;
+; |timing|min_high_timing_o~6                                                 ; |timing|min_high_timing_o~6                                                      ; out              ;
+; |timing|min_high_timing_o~7                                                 ; |timing|min_high_timing_o~7                                                      ; out              ;
+; |timing|min_high_timing_o~8                                                 ; |timing|min_high_timing_o~8                                                      ; out              ;
+; |timing|min_high_timing_o~9                                                 ; |timing|min_high_timing_o~9                                                      ; out              ;
+; |timing|min_high_timing_o~10                                                ; |timing|min_high_timing_o~10                                                     ; out              ;
+; |timing|min_high_timing_o~11                                                ; |timing|min_high_timing_o~11                                                     ; out              ;
+; |timing|min_high_timing_o~12                                                ; |timing|min_high_timing_o~12                                                     ; out              ;
+; |timing|min_high_timing_o~13                                                ; |timing|min_high_timing_o~13                                                     ; out              ;
+; |timing|min_high_timing_o~14                                                ; |timing|min_high_timing_o~14                                                     ; out              ;
+; |timing|min_high_timing_o~15                                                ; |timing|min_high_timing_o~15                                                     ; out              ;
+; |timing|min_low_timing_o[0]~reg0                                            ; |timing|min_low_timing_o[0]~reg0                                                 ; regout           ;
+; |timing|hr_high_timing_o[3]~reg0                                            ; |timing|hr_high_timing_o[3]~reg0                                                 ; regout           ;
+; |timing|carry_min~0                                                         ; |timing|carry_min~0                                                              ; out0             ;
+; |timing|hr_low_timing_o~0                                                   ; |timing|hr_low_timing_o~0                                                        ; out              ;
+; |timing|hr_low_timing_o~1                                                   ; |timing|hr_low_timing_o~1                                                        ; out              ;
+; |timing|hr_low_timing_o~2                                                   ; |timing|hr_low_timing_o~2                                                        ; out              ;
+; |timing|hr_low_timing_o~4                                                   ; |timing|hr_low_timing_o~4                                                        ; out              ;
+; |timing|hr_low_timing_o~5                                                   ; |timing|hr_low_timing_o~5                                                        ; out              ;
+; |timing|hr_low_timing_o~6                                                   ; |timing|hr_low_timing_o~6                                                        ; out              ;
+; |timing|hr_low_timing_o~8                                                   ; |timing|hr_low_timing_o~8                                                        ; out              ;
+; |timing|hr_low_timing_o~9                                                   ; |timing|hr_low_timing_o~9                                                        ; out              ;
+; |timing|hr_low_timing_o~10                                                  ; |timing|hr_low_timing_o~10                                                       ; out              ;
+; |timing|hr_low_timing_o~11                                                  ; |timing|hr_low_timing_o~11                                                       ; out              ;
+; |timing|hr_low_timing_o~12                                                  ; |timing|hr_low_timing_o~12                                                       ; out              ;
+; |timing|hr_low_timing_o~13                                                  ; |timing|hr_low_timing_o~13                                                       ; out              ;
+; |timing|hr_low_timing_o~14                                                  ; |timing|hr_low_timing_o~14                                                       ; out              ;
+; |timing|hr_low_timing_o~15                                                  ; |timing|hr_low_timing_o~15                                                       ; out              ;
+; |timing|min_high_timing_o[0]~reg0                                           ; |timing|min_high_timing_o[0]~reg0                                                ; regout           ;
+; |timing|always5~0                                                           ; |timing|always5~0                                                                ; out0             ;
+; |timing|hr_high_timing_o[2]~reg0                                            ; |timing|hr_high_timing_o[2]~reg0                                                 ; regout           ;
+; |timing|always5~1                                                           ; |timing|always5~1                                                                ; out0             ;
+; |timing|hr_high_timing_o~0                                                  ; |timing|hr_high_timing_o~0                                                       ; out              ;
+; |timing|hr_high_timing_o~1                                                  ; |timing|hr_high_timing_o~1                                                       ; out              ;
+; |timing|hr_high_timing_o~2                                                  ; |timing|hr_high_timing_o~2                                                       ; out              ;
+; |timing|hr_high_timing_o~3                                                  ; |timing|hr_high_timing_o~3                                                       ; out              ;
+; |timing|hr_high_timing_o~4                                                  ; |timing|hr_high_timing_o~4                                                       ; out              ;
+; |timing|hr_high_timing_o~5                                                  ; |timing|hr_high_timing_o~5                                                       ; out              ;
+; |timing|hr_high_timing_o~6                                                  ; |timing|hr_high_timing_o~6                                                       ; out              ;
+; |timing|hr_high_timing_o~7                                                  ; |timing|hr_high_timing_o~7                                                       ; out              ;
+; |timing|hr_high_timing_o~8                                                  ; |timing|hr_high_timing_o~8                                                       ; out              ;
+; |timing|hr_high_timing_o~9                                                  ; |timing|hr_high_timing_o~9                                                       ; out              ;
+; |timing|hr_high_timing_o~10                                                 ; |timing|hr_high_timing_o~10                                                      ; out              ;
+; |timing|hr_high_timing_o~11                                                 ; |timing|hr_high_timing_o~11                                                      ; out              ;
+; |timing|hr_high_timing_o~12                                                 ; |timing|hr_high_timing_o~12                                                      ; out              ;
+; |timing|hr_high_timing_o~13                                                 ; |timing|hr_high_timing_o~13                                                      ; out              ;
+; |timing|hr_high_timing_o~14                                                 ; |timing|hr_high_timing_o~14                                                      ; out              ;
+; |timing|hr_high_timing_o~15                                                 ; |timing|hr_high_timing_o~15                                                      ; out              ;
+; |timing|hr_low_timing_o[0]~reg0                                             ; |timing|hr_low_timing_o[0]~reg0                                                  ; regout           ;
+; |timing|always6~0                                                           ; |timing|always6~0                                                                ; out0             ;
+; |timing|hr_high_timing_o[1]~reg0                                            ; |timing|hr_high_timing_o[1]~reg0                                                 ; regout           ;
+; |timing|always6~1                                                           ; |timing|always6~1                                                                ; out0             ;
+; |timing|always6~6                                                           ; |timing|always6~6                                                                ; out0             ;
+; |timing|always6~11                                                          ; |timing|always6~11                                                               ; out0             ;
+; |timing|always6~12                                                          ; |timing|always6~12                                                               ; out0             ;
+; |timing|alarm~reg0                                                          ; |timing|alarm~reg0                                                               ; regout           ;
+; |timing|always6~13                                                          ; |timing|always6~13                                                               ; out0             ;
+; |timing|always6~14                                                          ; |timing|always6~14                                                               ; out0             ;
+; |timing|always6~16                                                          ; |timing|always6~16                                                               ; out0             ;
+; |timing|always6~17                                                          ; |timing|always6~17                                                               ; out0             ;
+; |timing|alarm~0                                                             ; |timing|alarm~0                                                                  ; out              ;
+; |timing|hr_high_timing_o[0]~reg0                                            ; |timing|hr_high_timing_o[0]~reg0                                                 ; regout           ;
+; |timing|hr_low_timing_o[2]~reg0                                             ; |timing|hr_low_timing_o[2]~reg0                                                  ; regout           ;
+; |timing|hr_low_timing_o[3]~reg0                                             ; |timing|hr_low_timing_o[3]~reg0                                                  ; regout           ;
+; |timing|min_high_timing_o[1]~reg0                                           ; |timing|min_high_timing_o[1]~reg0                                                ; regout           ;
+; |timing|min_high_timing_o[2]~reg0                                           ; |timing|min_high_timing_o[2]~reg0                                                ; regout           ;
+; |timing|min_high_timing_o[3]~reg0                                           ; |timing|min_high_timing_o[3]~reg0                                                ; regout           ;
+; |timing|min_low_timing_o[1]~reg0                                            ; |timing|min_low_timing_o[1]~reg0                                                 ; regout           ;
+; |timing|min_low_timing_o[2]~reg0                                            ; |timing|min_low_timing_o[2]~reg0                                                 ; regout           ;
+; |timing|min_low_timing_o[3]~reg0                                            ; |timing|min_low_timing_o[3]~reg0                                                 ; regout           ;
+; |timing|sec_high_timing_o[3]~reg0                                           ; |timing|sec_high_timing_o[3]~reg0                                                ; regout           ;
+; |timing|hr_high_timing_i[1]                                                 ; |timing|hr_high_timing_i[1]                                                      ; out              ;
+; |timing|hr_high_timing_i[2]                                                 ; |timing|hr_high_timing_i[2]                                                      ; out              ;
+; |timing|hr_high_timing_i[3]                                                 ; |timing|hr_high_timing_i[3]                                                      ; out              ;
+; |timing|hr_low_timing_i[1]                                                  ; |timing|hr_low_timing_i[1]                                                       ; out              ;
+; |timing|hr_low_timing_i[2]                                                  ; |timing|hr_low_timing_i[2]                                                       ; out              ;
+; |timing|hr_low_timing_i[3]                                                  ; |timing|hr_low_timing_i[3]                                                       ; out              ;
+; |timing|min_high_timing_i[0]                                                ; |timing|min_high_timing_i[0]                                                     ; out              ;
+; |timing|min_high_timing_i[2]                                                ; |timing|min_high_timing_i[2]                                                     ; out              ;
+; |timing|min_high_timing_i[3]                                                ; |timing|min_high_timing_i[3]                                                     ; out              ;
+; |timing|min_low_timing_i[0]                                                 ; |timing|min_low_timing_i[0]                                                      ; out              ;
+; |timing|min_low_timing_i[2]                                                 ; |timing|min_low_timing_i[2]                                                      ; out              ;
+; |timing|min_low_timing_i[3]                                                 ; |timing|min_low_timing_i[3]                                                      ; out              ;
+; |timing|hr_high_timing_o[0]                                                 ; |timing|hr_high_timing_o[0]                                                      ; pin_out          ;
+; |timing|hr_high_timing_o[1]                                                 ; |timing|hr_high_timing_o[1]                                                      ; pin_out          ;
+; |timing|hr_high_timing_o[2]                                                 ; |timing|hr_high_timing_o[2]                                                      ; pin_out          ;
+; |timing|hr_high_timing_o[3]                                                 ; |timing|hr_high_timing_o[3]                                                      ; pin_out          ;
+; |timing|hr_low_timing_o[0]                                                  ; |timing|hr_low_timing_o[0]                                                       ; pin_out          ;
+; |timing|hr_low_timing_o[1]                                                  ; |timing|hr_low_timing_o[1]                                                       ; pin_out          ;
+; |timing|hr_low_timing_o[2]                                                  ; |timing|hr_low_timing_o[2]                                                       ; pin_out          ;
+; |timing|hr_low_timing_o[3]                                                  ; |timing|hr_low_timing_o[3]                                                       ; pin_out          ;
+; |timing|min_high_timing_o[0]                                                ; |timing|min_high_timing_o[0]                                                     ; pin_out          ;
+; |timing|min_high_timing_o[1]                                                ; |timing|min_high_timing_o[1]                                                     ; pin_out          ;
+; |timing|min_high_timing_o[2]                                                ; |timing|min_high_timing_o[2]                                                     ; pin_out          ;
+; |timing|min_high_timing_o[3]                                                ; |timing|min_high_timing_o[3]                                                     ; pin_out          ;
+; |timing|min_low_timing_o[0]                                                 ; |timing|min_low_timing_o[0]                                                      ; pin_out          ;
+; |timing|min_low_timing_o[1]                                                 ; |timing|min_low_timing_o[1]                                                      ; pin_out          ;
+; |timing|min_low_timing_o[2]                                                 ; |timing|min_low_timing_o[2]                                                      ; pin_out          ;
+; |timing|min_low_timing_o[3]                                                 ; |timing|min_low_timing_o[3]                                                      ; pin_out          ;
+; |timing|sec_high_timing_o[3]                                                ; |timing|sec_high_timing_o[3]                                                     ; pin_out          ;
+; |timing|alarm                                                               ; |timing|alarm                                                                    ; pin_out          ;
+; |timing|Equal2~0                                                            ; |timing|Equal2~0                                                                 ; out0             ;
+; |timing|Equal3~0                                                            ; |timing|Equal3~0                                                                 ; out0             ;
+; |timing|Equal4~0                                                            ; |timing|Equal4~0                                                                 ; out0             ;
+; |timing|Equal5~0                                                            ; |timing|Equal5~0                                                                 ; out0             ;
+; |timing|Equal6~0                                                            ; |timing|Equal6~0                                                                 ; out0             ;
+; |timing|Equal17~0                                                           ; |timing|Equal17~0                                                                ; out0             ;
+; |timing|Equal18~0                                                           ; |timing|Equal18~0                                                                ; out0             ;
+; |timing|Equal19~0                                                           ; |timing|Equal19~0                                                                ; out0             ;
+; |timing|lpm_add_sub:Add5|result_node[1]                                     ; |timing|lpm_add_sub:Add5|result_node[1]                                          ; out0             ;
+; |timing|lpm_add_sub:Add5|result_node[2]                                     ; |timing|lpm_add_sub:Add5|result_node[2]                                          ; out0             ;
+; |timing|lpm_add_sub:Add5|result_node[3]                                     ; |timing|lpm_add_sub:Add5|result_node[3]                                          ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[0]~0                      ; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[0]                        ; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[0]                             ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~0                                  ; |timing|lpm_add_sub:Add5|addcore:adder|_~0                                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~1                                  ; |timing|lpm_add_sub:Add5|addcore:adder|_~1                                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~2                                  ; |timing|lpm_add_sub:Add5|addcore:adder|_~2                                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~3                                  ; |timing|lpm_add_sub:Add5|addcore:adder|_~3                                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[3]~1                      ; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[3]~1                           ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[3]                        ; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[3]                             ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[2]                        ; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[2]                             ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[1]                        ; |timing|lpm_add_sub:Add5|addcore:adder|datab_node[1]                             ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[3]~1                  ; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[3]~1                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[2]~2                  ; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[2]~2                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[1]~3                  ; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[1]~3                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[3]                    ; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[2]                    ; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[1]                    ; |timing|lpm_add_sub:Add5|addcore:adder|unreg_res_node[1]                         ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~4                                  ; |timing|lpm_add_sub:Add5|addcore:adder|_~4                                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~5                                  ; |timing|lpm_add_sub:Add5|addcore:adder|_~5                                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~6                                  ; |timing|lpm_add_sub:Add5|addcore:adder|_~6                                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~7                                  ; |timing|lpm_add_sub:Add5|addcore:adder|_~7                                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~8                                  ; |timing|lpm_add_sub:Add5|addcore:adder|_~8                                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~9                                  ; |timing|lpm_add_sub:Add5|addcore:adder|_~9                                       ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~10                                 ; |timing|lpm_add_sub:Add5|addcore:adder|_~10                                      ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~11                                 ; |timing|lpm_add_sub:Add5|addcore:adder|_~11                                      ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~12                                 ; |timing|lpm_add_sub:Add5|addcore:adder|_~12                                      ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~13                                 ; |timing|lpm_add_sub:Add5|addcore:adder|_~13                                      ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~14                                 ; |timing|lpm_add_sub:Add5|addcore:adder|_~14                                      ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|_~15                                 ; |timing|lpm_add_sub:Add5|addcore:adder|_~15                                      ; out0             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; sout             ;
+; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |timing|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add4|result_node[1]                                     ; |timing|lpm_add_sub:Add4|result_node[1]                                          ; out0             ;
+; |timing|lpm_add_sub:Add4|result_node[2]                                     ; |timing|lpm_add_sub:Add4|result_node[2]                                          ; out0             ;
+; |timing|lpm_add_sub:Add4|result_node[3]                                     ; |timing|lpm_add_sub:Add4|result_node[3]                                          ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[0]~0                      ; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[0]                        ; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[0]                             ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~0                                  ; |timing|lpm_add_sub:Add4|addcore:adder|_~0                                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~1                                  ; |timing|lpm_add_sub:Add4|addcore:adder|_~1                                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~2                                  ; |timing|lpm_add_sub:Add4|addcore:adder|_~2                                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~3                                  ; |timing|lpm_add_sub:Add4|addcore:adder|_~3                                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[3]~1                      ; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[3]~1                           ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[3]                        ; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[3]                             ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[2]                        ; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[2]                             ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[1]                        ; |timing|lpm_add_sub:Add4|addcore:adder|datab_node[1]                             ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[3]~1                  ; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[3]~1                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[2]~2                  ; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[2]~2                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[1]~3                  ; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[1]~3                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[3]                    ; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[2]                    ; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[1]                    ; |timing|lpm_add_sub:Add4|addcore:adder|unreg_res_node[1]                         ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~4                                  ; |timing|lpm_add_sub:Add4|addcore:adder|_~4                                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~5                                  ; |timing|lpm_add_sub:Add4|addcore:adder|_~5                                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~6                                  ; |timing|lpm_add_sub:Add4|addcore:adder|_~6                                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~7                                  ; |timing|lpm_add_sub:Add4|addcore:adder|_~7                                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~8                                  ; |timing|lpm_add_sub:Add4|addcore:adder|_~8                                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~9                                  ; |timing|lpm_add_sub:Add4|addcore:adder|_~9                                       ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~10                                 ; |timing|lpm_add_sub:Add4|addcore:adder|_~10                                      ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~11                                 ; |timing|lpm_add_sub:Add4|addcore:adder|_~11                                      ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~12                                 ; |timing|lpm_add_sub:Add4|addcore:adder|_~12                                      ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~13                                 ; |timing|lpm_add_sub:Add4|addcore:adder|_~13                                      ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~14                                 ; |timing|lpm_add_sub:Add4|addcore:adder|_~14                                      ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|_~15                                 ; |timing|lpm_add_sub:Add4|addcore:adder|_~15                                      ; out0             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; sout             ;
+; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |timing|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add3|result_node[0]                                     ; |timing|lpm_add_sub:Add3|result_node[0]                                          ; out0             ;
+; |timing|lpm_add_sub:Add3|result_node[1]                                     ; |timing|lpm_add_sub:Add3|result_node[1]                                          ; out0             ;
+; |timing|lpm_add_sub:Add3|result_node[2]                                     ; |timing|lpm_add_sub:Add3|result_node[2]                                          ; out0             ;
+; |timing|lpm_add_sub:Add3|result_node[3]                                     ; |timing|lpm_add_sub:Add3|result_node[3]                                          ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[0]~0                      ; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[0]                        ; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[0]                             ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[0]~0                  ; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[0]                    ; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~0                                  ; |timing|lpm_add_sub:Add3|addcore:adder|_~0                                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~1                                  ; |timing|lpm_add_sub:Add3|addcore:adder|_~1                                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~2                                  ; |timing|lpm_add_sub:Add3|addcore:adder|_~2                                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~3                                  ; |timing|lpm_add_sub:Add3|addcore:adder|_~3                                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[3]~1                      ; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[3]~1                           ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[3]                        ; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[3]                             ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[2]                        ; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[2]                             ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[1]                        ; |timing|lpm_add_sub:Add3|addcore:adder|datab_node[1]                             ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[3]~1                  ; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[3]~1                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[2]~2                  ; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[2]~2                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[1]~3                  ; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[1]~3                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[3]                    ; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[2]                    ; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[1]                    ; |timing|lpm_add_sub:Add3|addcore:adder|unreg_res_node[1]                         ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~4                                  ; |timing|lpm_add_sub:Add3|addcore:adder|_~4                                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~5                                  ; |timing|lpm_add_sub:Add3|addcore:adder|_~5                                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~6                                  ; |timing|lpm_add_sub:Add3|addcore:adder|_~6                                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~7                                  ; |timing|lpm_add_sub:Add3|addcore:adder|_~7                                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~8                                  ; |timing|lpm_add_sub:Add3|addcore:adder|_~8                                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~9                                  ; |timing|lpm_add_sub:Add3|addcore:adder|_~9                                       ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~10                                 ; |timing|lpm_add_sub:Add3|addcore:adder|_~10                                      ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~11                                 ; |timing|lpm_add_sub:Add3|addcore:adder|_~11                                      ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~12                                 ; |timing|lpm_add_sub:Add3|addcore:adder|_~12                                      ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~13                                 ; |timing|lpm_add_sub:Add3|addcore:adder|_~13                                      ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~14                                 ; |timing|lpm_add_sub:Add3|addcore:adder|_~14                                      ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|_~15                                 ; |timing|lpm_add_sub:Add3|addcore:adder|_~15                                      ; out0             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; sout             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |timing|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]      ; sout             ;
+; |timing|lpm_add_sub:Add2|result_node[2]                                     ; |timing|lpm_add_sub:Add2|result_node[2]                                          ; out0             ;
+; |timing|lpm_add_sub:Add2|result_node[3]                                     ; |timing|lpm_add_sub:Add2|result_node[3]                                          ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[0]~0                      ; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[0]                        ; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[0]                             ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~0                                  ; |timing|lpm_add_sub:Add2|addcore:adder|_~0                                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~1                                  ; |timing|lpm_add_sub:Add2|addcore:adder|_~1                                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~2                                  ; |timing|lpm_add_sub:Add2|addcore:adder|_~2                                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~3                                  ; |timing|lpm_add_sub:Add2|addcore:adder|_~3                                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[3]~1                      ; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[3]~1                           ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[3]                        ; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[3]                             ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[2]                        ; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[2]                             ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[1]                        ; |timing|lpm_add_sub:Add2|addcore:adder|datab_node[1]                             ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[3]~1                  ; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[3]~1                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]~2                  ; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]~2                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[1]~3                  ; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[1]~3                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[3]                    ; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]                    ; |timing|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~4                                  ; |timing|lpm_add_sub:Add2|addcore:adder|_~4                                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~5                                  ; |timing|lpm_add_sub:Add2|addcore:adder|_~5                                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~6                                  ; |timing|lpm_add_sub:Add2|addcore:adder|_~6                                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~7                                  ; |timing|lpm_add_sub:Add2|addcore:adder|_~7                                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~8                                  ; |timing|lpm_add_sub:Add2|addcore:adder|_~8                                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~9                                  ; |timing|lpm_add_sub:Add2|addcore:adder|_~9                                       ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~10                                 ; |timing|lpm_add_sub:Add2|addcore:adder|_~10                                      ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~11                                 ; |timing|lpm_add_sub:Add2|addcore:adder|_~11                                      ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~12                                 ; |timing|lpm_add_sub:Add2|addcore:adder|_~12                                      ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~13                                 ; |timing|lpm_add_sub:Add2|addcore:adder|_~13                                      ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~14                                 ; |timing|lpm_add_sub:Add2|addcore:adder|_~14                                      ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|_~15                                 ; |timing|lpm_add_sub:Add2|addcore:adder|_~15                                      ; out0             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |timing|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |timing|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |timing|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |timing|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |timing|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[0]                             ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~1                                  ; |timing|lpm_add_sub:Add1|addcore:adder|_~1                                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~2                                  ; |timing|lpm_add_sub:Add1|addcore:adder|_~2                                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[3]~1                      ; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[3]~1                           ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[3]                             ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[2]                             ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; |timing|lpm_add_sub:Add1|addcore:adder|datab_node[1]                             ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~1                  ; |timing|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~1                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~4                                  ; |timing|lpm_add_sub:Add1|addcore:adder|_~4                                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~5                                  ; |timing|lpm_add_sub:Add1|addcore:adder|_~5                                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~6                                  ; |timing|lpm_add_sub:Add1|addcore:adder|_~6                                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~7                                  ; |timing|lpm_add_sub:Add1|addcore:adder|_~7                                       ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~10                                 ; |timing|lpm_add_sub:Add1|addcore:adder|_~10                                      ; out0             ;
+; |timing|lpm_add_sub:Add1|addcore:adder|_~13                                 ; |timing|lpm_add_sub:Add1|addcore:adder|_~13                                      ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[0]                             ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~1                                  ; |timing|lpm_add_sub:Add0|addcore:adder|_~1                                       ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~2                                  ; |timing|lpm_add_sub:Add0|addcore:adder|_~2                                       ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[3]~1                      ; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[3]~1                           ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[3]                             ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[2]                             ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; |timing|lpm_add_sub:Add0|addcore:adder|datab_node[1]                             ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~4                                  ; |timing|lpm_add_sub:Add0|addcore:adder|_~4                                       ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~5                                  ; |timing|lpm_add_sub:Add0|addcore:adder|_~5                                       ; out0             ;
+; |timing|lpm_add_sub:Add0|addcore:adder|_~6                                  ; |timing|lpm_add_sub:Add0|addcore:adder|_~6                                       ; out0             ;
++-----------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Wed Mar 13 08:25:33 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off timing -c timing
+Info: Using vector source file "D:/HDL/sub_module/timing/timing.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      26.03 %
+Info: Number of transitions in simulation is 4637
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 175 megabytes
+    Info: Processing ended: Wed Mar 13 08:25:33 2019
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
